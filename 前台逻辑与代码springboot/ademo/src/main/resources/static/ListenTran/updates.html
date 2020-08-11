@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>注册</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<link href="./css/login.css" type="text/css" rel="stylesheet"/>
+<link href="./css/common.css" type="text/css" rel="stylesheet"/>
+<link href="./css/update.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="./js/new_file.js"></script>
+<body>
+	<div class="top">
+		<img src="./img/changting.png">
+	</div>
+	<div class="middle">
+	     <div class="i1">
+            <svg id="icons" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574060568654" p-id="8764" version="1.1"><path fill="#ffffff" d="M 671.642 1024 H 352.338 A 191.795 191.795 0 0 1 160.768 832 v -128 a 191.345 191.345 0 0 1 129.29 -180.736 c -40.96 -55.296 -65.4336 -126.075 -65.4336 -203.264 C 224.625 143.36 353.28 0 512 0 s 287.375 143.36 287.375 320 c 0 77.1891 -24.576 147.988 -65.536 203.264 A 191.365 191.365 0 0 1 863.232 704 v 128 A 191.795 191.795 0 0 1 671.642 1024 Z m 63.8566 -704 c 0 -141.312 -100.065 -256 -223.519 -256 s -223.519 114.688 -223.519 256 s 100.065 256 223.519 256 s 223.519 -114.688 223.519 -256 Z m 63.8566 399.995 c 0 -68.0346 -51.5277 -124.703 -120.566 -139.776 c -47.104 37.4784 -104.448 59.7606 -166.81 59.7606 S 392.192 617.718 345.088 580.239 c -69.0381 15.0528 -120.566 71.68 -120.566 139.776 v 95.9898 c 0 79.5238 70.185 143.995 156.754 143.995 h 261.345 c 86.569 0 156.754 -64.471 156.754 -143.995 v -96.0102 Z" p-id="8765" /></svg>
+			<input type="text"  id="username" placeholder="请输入你的手机号">
+			<svg id="delete" class="delete1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1024 1024" width="200" height="200" t="1574061935144" p-id="13315" version="1.1"><path fill="#ffffff" d="M 512 620.544 l 253.338 253.338 a 76.6976 76.6976 0 1 0 108.544 -108.544 L 620.646 512 l 253.235 -253.338 a 76.6976 76.6976 0 1 0 -108.544 -108.544 L 512 403.354 L 258.662 150.118 a 76.6976 76.6976 0 1 0 -108.544 108.544 L 403.354 512 L 150.118 765.338 a 76.6976 76.6976 0 1 0 108.544 108.544 L 512 620.646 Z" p-id="13316" /></svg>
+		 </div>
+		 <div class="s1"> </div>
+		 <div class="i1">
+			<svg id="icons" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574061548021" p-id="10144" version="1.1"><path fill="#ffffff" d="M 767.94 380.326 H 301.176 v -58.4282 C 301.176 192.753 383.819 87.7026 516.698 87.7026 c 122.097 0.120471 202.692 104.388 202.692 243.471 v 54.4527 c 0 14.0951 32.9487 29.0936 56.8019 21.6847 c 23.7327 -7.40894 36.8038 -5.54165 36.8038 -19.0344 V 331.294 c 0 -183.597 -115.049 -330.993 -296.358 -331.234 C 334.065 -0.240941 210.824 144.384 210.824 321.837 v 63.8494 C 124.627 405.564 60.2353 480.678 60.2353 570.248 v 234.135 c 0 104.749 87.8231 189.922 195.825 189.922 h 511.88 c 108.002 0 195.825 -85.1727 195.825 -189.922 V 570.248 c 0 -104.689 -87.8231 -189.922 -195.825 -189.922 Z M 873.412 802.334 c 0 56.32 -43.6706 102.159 -97.3402 102.159 H 247.928 c -53.6094 0 -97.3402 -45.8391 -97.3402 -102.159 V 570.248 c 0 -56.32 43.6706 -102.159 97.3402 -102.159 h 528.143 c 53.6094 0 97.3402 45.8391 97.3402 102.159 v 232.026 Z" p-id="10145" /></svg>
+		 <input type="password"  id="sxinpassword" placeholder="请输入你的密码">
+		 <svg id="delete" class="delete2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="200" height="200" t="1574061935144" p-id="13315" version="1.1"><path fill="#ffffff" d="M 512 620.544 l 253.338 253.338 a 76.6976 76.6976 0 1 0 108.544 -108.544 L 620.646 512 l 253.235 -253.338 a 76.6976 76.6976 0 1 0 -108.544 -108.544 L 512 403.354 L 258.662 150.118 a 76.6976 76.6976 0 1 0 -108.544 108.544 L 403.354 512 L 150.118 765.338 a 76.6976 76.6976 0 1 0 108.544 108.544 L 512 620.646 Z" p-id="13316" /></svg>
+		 </div>
+		<div class="s2"> </div>
+		<div class="i1">
+			<svg id="icons" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574061548021" p-id="10144" version="1.1"><path fill="#ffffff" d="M 767.94 380.326 H 301.176 v -58.4282 C 301.176 192.753 383.819 87.7026 516.698 87.7026 c 122.097 0.120471 202.692 104.388 202.692 243.471 v 54.4527 c 0 14.0951 32.9487 29.0936 56.8019 21.6847 c 23.7327 -7.40894 36.8038 -5.54165 36.8038 -19.0344 V 331.294 c 0 -183.597 -115.049 -330.993 -296.358 -331.234 C 334.065 -0.240941 210.824 144.384 210.824 321.837 v 63.8494 C 124.627 405.564 60.2353 480.678 60.2353 570.248 v 234.135 c 0 104.749 87.8231 189.922 195.825 189.922 h 511.88 c 108.002 0 195.825 -85.1727 195.825 -189.922 V 570.248 c 0 -104.689 -87.8231 -189.922 -195.825 -189.922 Z M 873.412 802.334 c 0 56.32 -43.6706 102.159 -97.3402 102.159 H 247.928 c -53.6094 0 -97.3402 -45.8391 -97.3402 -102.159 V 570.248 c 0 -56.32 43.6706 -102.159 97.3402 -102.159 h 528.143 c 53.6094 0 97.3402 45.8391 97.3402 102.159 v 232.026 Z" p-id="10145" /></svg>
+			<input type="password"  id="xinpassword" placeholder="请输入你的新密码">
+			<svg id="delete" class="delete3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="200" height="200" t="1574061935144" p-id="13315" version="1.1"><path fill="#ffffff" d="M 512 620.544 l 253.338 253.338 a 76.6976 76.6976 0 1 0 108.544 -108.544 L 620.646 512 l 253.235 -253.338 a 76.6976 76.6976 0 1 0 -108.544 -108.544 L 512 403.354 L 258.662 150.118 a 76.6976 76.6976 0 1 0 -108.544 108.544 L 403.354 512 L 150.118 765.338 a 76.6976 76.6976 0 1 0 108.544 108.544 L 512 620.646 Z" p-id="13316" /></svg>
+		</div>
+		<div class="s3"> </div>
+		<div class="i1">
+			<svg id="icons" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574061548021" p-id="10144" version="1.1"><path fill="#ffffff" d="M 767.94 380.326 H 301.176 v -58.4282 C 301.176 192.753 383.819 87.7026 516.698 87.7026 c 122.097 0.120471 202.692 104.388 202.692 243.471 v 54.4527 c 0 14.0951 32.9487 29.0936 56.8019 21.6847 c 23.7327 -7.40894 36.8038 -5.54165 36.8038 -19.0344 V 331.294 c 0 -183.597 -115.049 -330.993 -296.358 -331.234 C 334.065 -0.240941 210.824 144.384 210.824 321.837 v 63.8494 C 124.627 405.564 60.2353 480.678 60.2353 570.248 v 234.135 c 0 104.749 87.8231 189.922 195.825 189.922 h 511.88 c 108.002 0 195.825 -85.1727 195.825 -189.922 V 570.248 c 0 -104.689 -87.8231 -189.922 -195.825 -189.922 Z M 873.412 802.334 c 0 56.32 -43.6706 102.159 -97.3402 102.159 H 247.928 c -53.6094 0 -97.3402 -45.8391 -97.3402 -102.159 V 570.248 c 0 -56.32 43.6706 -102.159 97.3402 -102.159 h 528.143 c 53.6094 0 97.3402 45.8391 97.3402 102.159 v 232.026 Z" p-id="10145" /></svg>
+			<input type="password"  id="password" placeholder="请再次输入你的新密码">
+			<svg id="delete" class="delete4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="200" height="200" t="1574061935144" p-id="13315" version="1.1"><path fill="#ffffff" d="M 512 620.544 l 253.338 253.338 a 76.6976 76.6976 0 1 0 108.544 -108.544 L 620.646 512 l 253.235 -253.338 a 76.6976 76.6976 0 1 0 -108.544 -108.544 L 512 403.354 L 258.662 150.118 a 76.6976 76.6976 0 1 0 -108.544 108.544 L 403.354 512 L 150.118 765.338 a 76.6976 76.6976 0 1 0 108.544 108.544 L 512 620.646 Z" p-id="13316" /></svg>
+		</div>
+		 <div class="s4"> </div>
+	</div>
+	<div class="footer">
+		<div id="dh">
+			<a href="./login.html">返回登录</a>
+		</div>
+		<div class="deng">
+		    <input type="button" id="button" value="修改">
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(window).load(function() {
+		$('body').css('height', $(window).height());
+	});
+	$('.delete1').click(function(){
+		$('input[type=text]').val("");
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	});
+	$('.delete2').click(function(){
+		$('#sxinpassword').val("");
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	});
+	$('.delete3').click(function(){
+		$('#xinpassword').val("");
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	});
+	$('.delete4').click(function(){
+		$('#password').val("");
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	});
+	$('input[type=text]').on('input properchange',function(e){
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	})
+	$('#password').on('input properchange',function(e){
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	})
+	$('#xinpassword').on('input properchange',function(e){
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	})
+	$('#sxinpassword').on('input properchange',function(e){
+		$('.s1').html("");
+		$('.s2').html("");
+		$('.s3').html("");
+		$('.s4').html("");
+	})
+	$('#button').click(function(){
+		var s=" ";
+		var user_code=$("#username").val();
+		var user_sxinpassword=$("#password").val();
+		var user_password=$("#sxinpassword").val();
+		console.log(user_password);
+		var user_xinpassword=$("#xinpassword").val();
+		if($('input[type=text]').val()=="" || $('input[type=text]').val()==null|| $('input[type=text]').val().length!=11){
+			s=`<a>手机号长度有误,要满足十一位数</a>`;
+			$('.s1').html(s);
+			$('.s2').html(" ");
+			$('.s3').html(" ");
+			$('.s4').html(" ");
+			return;
+		}else if($('#password').val()==""||$('#password').val()==null){
+			s= `<a>确认密码为空</a>`;
+			$('.s1').html(" ");
+			$('.s4').html(s);
+			$('.s3').html(" ");
+			$('.s2').html(" ");
+			return;
+		}else if($('#xinpassword').val()==""||$('#xinpassword').val()==null){
+			s= `<a>密码为空</a>`;
+			$('.s1').html(" ");
+			$('.s3').html(s);
+			$('.s2').html(" ");
+			$('.s4').html(" ");
+			return;
+		}else if($('#sxinpassword').val()==""||$('#sxinpassword').val()==null){
+			s= `<a>旧密码为空</a>`;
+			$('.s1').html(" ");
+			$('.s2').html(s);
+			$('.s3').html(" ");
+			$('.s4').html(" ");
+			return;
+		}else if($('#password').val()!=$('#xinpassword').val()){
+			s=`<a>新密码与旧密码不同</a>`;
+			$('.s1').html(" ");
+			$('.s2').html(" ");
+			$('.s3').html(" ");
+			$('.s4').html(s);
+			return;
+		}
+		else{
+			$('.s1').html(s);
+			$('.s2').html(s);
+			$('.s3').html(s);
+			$('.s4').html(s);
+		}
+		$.ajax({
+			//地址
+			url :"/userupdate/"+user_code+"/"+user_password+"/"+user_sxinpassword+"/",
+			//提交方式
+			type : "POST",
+			//发送请求时所传递的参数
+			//返回的数据使用json
+			dataType : "json",
+			//成功
+			success : function(data){
+				if(data==0){
+					s=`<a>用户名或密码不存在</a>`;
+					$('.s1').html(" ");
+					$('.s2').html(s);
+					$('.s3').html(" ");
+					$('.s4').html(" ");
+					//console.log("用户名为："+data.username+"，密码为："+data.password);
+				}
+				else if(data==2){
+					alert("修改失败");
+					return;
+				}
+				else if (data==1){
+					alert("修改成功");
+					window.location.href = "./login.html";
+				}
+			}
+		});
+	});
+
+</script>

@@ -1,0 +1,151 @@
+.top{
+	width:100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	position:fixed;
+	top:0;
+}
+.top svg{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 1rem;
+}
+.top h2{
+	color: #FFFFFF;
+	margin-right: 3rem;
+}
+.chang2{
+	margin-top:4rem ;
+}
+.xingge{
+	margin-top: 1rem;
+}
+.xingge li{
+	width: 100%;
+}
+.xingge img{
+	width: 4rem;
+	height: 4rem;
+	margin-left: 1rem;
+}
+.xingge li svg{
+	width: 2.4rem;
+	height: 1.25rem;
+	margin-left: 1rem;
+}
+.xingge li{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+.xingge li a{
+	display: flex;
+	flex-flow:row ;
+	align-items: center;
+}
+.x3{
+	margin-left: 1rem;
+	display:-webkit-box;
+	display:box;
+	-webkit-box-orient:vertical;
+	box-orient:vertical;
+}
+.x3 p{
+	color: #000000;
+	font-size: 1.3rem;
+}
+.x3 a{
+	color: #4d4d4d;
+}
+.xmv{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin-left: -1rem;
+}
+.xmv h7{
+	color: #4d4d4d;
+}
+.xmv_a1{
+	width: 50%;
+}
+.xmv a h7{
+	font-size: 0.7rem;
+}
+.footer{
+	width:100%;
+	height:3.4rem;
+	background:#7b467a;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	position:fixed;bottom:0;left:0;
+}
+.footer a{
+	color: #FFFFFF;
+}
+.footer_svg{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 30%;
+}
+.footer_svg svg{
+	width:3rem;
+	height:3rem;
+}
+.lifooter{                              /* 咨询 */    
+	width: 100%;
+	margin-bottom: 3.4rem;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+}
+.search2 input{
+	border: 0;
+	height: 1.75rem;
+	width: 80%;
+	background-color:transparent;
+	outline:none;
+	color: #e1d2d9;
+}
+.search2 input::-webkit-input-placeholder{
+	color: #FFFFFF;
+	font-size: 0.75rem;
+}
+.search2 input::-moz-placeholder{
+	color: #FFFFFF;
+	font-size: 0.75rem;
+}
+.search2 input::-ms-input-placeholder{
+	color: #FFFFFF;
+	font-size: 0.75rem;
+}
+.search2 svg{
+	margin-right: 4rem;
+	width: 1.45rem;
+	height: 1.45rem;
+}
+.search2{
+	margin: auto;
+	margin-bottom: 0.2rem;
+	margin-top: 1rem;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	width: 80%;
+	height: 2rem;
+	background: #dea9c5;
+	border-radius:1rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.search{
+	width: 100%;
+	height: 2rem;
+	border-radius:1rem;
+	margin-top: 4rem;
+}

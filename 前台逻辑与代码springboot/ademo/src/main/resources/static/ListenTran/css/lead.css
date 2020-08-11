@@ -1,0 +1,109 @@
+.swiper-slide img{
+	display: block;
+	width: 50%;
+	height: 50%;
+	border-radius:50% ;
+	margin-top:12rem;
+}
+#l1{
+	justify-content: center;
+	align-items:center;
+	display:flex
+}
+.swiper-slide{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#l2{
+	display:flex;
+	justify-content: center;
+	margin: auto;display:-webkit-box;
+	display:box;
+	-webkit-box-orient:vertical ;
+	box-orient:vertical;
+	-webkit-box-align:baseline;
+	box-align:baseline;
+}
+#l2 svg{
+	display: block;
+	margin-top: 2rem;
+}
+.l2_p1{
+	color: #FFFFFF;
+	margin-bottom: 2.4rem;
+}
+.l2_p2{
+	color: #FFFFFF;
+}
+#l3{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	justify-content: center;
+	margin: auto;display:-webkit-box;
+	display:box;
+	-webkit-box-orient:vertical ;
+	box-orient:vertical;
+	-webkit-box-align:baseline;
+	box-align:baseline;
+}
+.l3_p1{
+	margin-top: 9rem;
+	font-size: 3rem;
+	color: #FFFFFF;
+}
+.l3_p2{
+	margin-top: 5.5rem;
+	color: #FFFFFF;
+	font-size:2rem ;
+	margin-bottom: 4rem;
+}
+.l3_p3{
+	background: #FFFFFF;
+	border-radius:2rem;
+	padding: 1.3rem;
+	
+}
+.l3_p3 a{
+	font-size:1.7rem ;
+	color: #B53B86;
+}
+
+.carousel_index{
+position:absolute;
+	top:160px;
+	height:12px;
+    width:5rem;
+    height:0.625rem;
+    left:0;right:0;
+    margin:auto;
+}
+.carousel_icon{
+	width:20%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	position:fixed;
+	top:22rem;
+}
+.carousel_icon1{
+	background:url(../img/pointch.png) no-repeat;
+	background-size:8px;
+	background-position:center center;
+}
+.carousel_icon2{
+	background:url(../img/point.png) no-repeat;
+	background-size:8px;
+	background-position:center center;
+}
+.carousel_icon3{
+	background:url(../img/point.png) no-repeat;
+	background-size:8px;
+	background-position:center center;
+}

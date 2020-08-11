@@ -1,0 +1,47 @@
+.layui-main{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top:2.5rem;
+}
+.top{
+	width:100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	top:0;
+	background: #c45b96;
+}
+.top svg{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 1rem;
+}
+.top h2{
+	color: #FFFFFF;
+}
+.xuanze{
+	margin-top: 1rem;
+	display: flex;
+	flex-flow: row-wrap;
+	border-bottom: 1px solid #e1d2d9;
+	padding-bottom: 1rem;
+}
+.l1{
+	width: 100%;
+	display: flex;
+	flex-flow: row-wrap;
+	justify-content: space-around;
+}
+.xuanze img{
+	width: 3.25rem;
+	height: 3.25rem;
+	border-radius:50%;
+}
+.xuanze h5{
+	margin-bottom: 1rem;
+}
+.l2{
+	margin-right: 9rem;
+}

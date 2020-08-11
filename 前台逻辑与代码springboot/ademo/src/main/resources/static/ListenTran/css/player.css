@@ -1,0 +1,140 @@
+html{            
+	height: 100%;        
+}        
+body{            
+	padding: 0;            
+	margin: 0;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2,form,figure, section, p, input, button { margin: 0; padding: 0 }
+ul,ol,dd,dt,dl{list-style-type:none;}
+a{text-decoration: none;}
+.top{
+	width:100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	position:fixed;
+	top:0;
+}
+.top svg{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 1rem;
+}
+.top h2{
+	color: #FFFFFF;
+}
+.anothor{
+	position:fixed;
+	width:100%;
+	margin-top: 3rem;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.a1{
+	color: #FFFFFF;
+}
+.a2{
+	margin-left: 0.3rem;
+	color: #FFFFFF;
+	border: 0.16rem #FFFFFF solid;
+}
+.top_2{
+	position:fixed;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	top: 5rem;
+}
+.top_2 a{
+	border: #ffffff 0.0625rem solid;
+	margin: 0.3rem;
+	color: #FFFFFF;
+}
+.midden{
+	position:fixed;
+	width:100%;
+	display: flex;
+	justify-content:space-around;
+	bottom: 10rem;
+}
+#m1{
+	width: 1.4rem;
+	height: 1.4rem;
+}
+.midden svg{
+	width: 1.4rem;
+	height: 1.4rem;
+}
+.player{
+	width:100%;
+	position:fixed;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	bottom: 2.8rem;
+	
+}
+.player svg{
+	width: 3rem;
+	height: 3rem;
+	margin: 0.3rem;
+}
+#bofang{
+	width: 3rem;
+	height: 3rem;
+	margin: 0.3rem;
+}
+#i1{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+#i2{
+	width: 2.5rem;
+	height: 2.5rem;
+} 
+                                    /* //进度条部分 */
+.progress {
+	position:fixed;
+	bottom:1rem;
+	left:50%;
+	transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23.75rem;
+    margin: 100px auto;
+}
+.progress-bar {
+   position: relative;
+   width: 70%;
+   height: 5px;
+   background-color: #eee;
+   vertical-align: 2px;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 5px;
+    width: 70%;
+    background: #31c27c;
+}
+
+.now::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 3px;
+  height: 7px;
+  background-color: lightblue;
+}

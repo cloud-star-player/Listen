@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		  <link rel="stylesheet" href="./lib/layui/css/layui.css"  media="all">
+		  <link rel="stylesheet" href="./css/newsall.css"  media="all">
+		  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<title></title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+				
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="javascript:history.back()"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574580567312" p-id="5377" version="1.1"><path fill="#ffffff" d="M 766.862 1021.72 c -10.24 0 -20.594 -3.64 -28.444 -10.922 L 228.693 538.396 c -15.701 -14.563 -15.701 -38.229 0 -52.792 L 738.418 13.198 c 15.701 -14.563 41.187 -14.563 56.889 0 c 15.701 14.564 15.701 38.23 0 52.793 L 314.027 512 l 481.28 446.009 c 15.701 14.563 15.701 38.23 0 52.793 c -7.851 7.282 -18.205 10.922 -28.445 10.922 Z" p-id="5378" /></svg></a>
+			<h2>消息</h2>
+			<a href="#"><span> </span></a>
+		</div>
+		<div class="p">
+
+		<div>	
+	</body>
+	<script src="./lib/layui/layui.all.js" charset="utf-8"></script>
+	<script>
+		function gettime(t){
+			var _time=new Date(t);
+			var   year=_time.getFullYear();//2017
+			var   month=_time.getMonth()+1;//7
+			var   date=_time.getDate();//10
+			var   hour=_time.getHours();//10
+			var   minute=_time.getMinutes();//56
+			var   second=_time.getSeconds();//15
+			return   year+"年"+month+"月"+date+"日   "+hour+":"+minute+":"+second;//这里自己按自己需要的格式拼接
+		}
+		var user_id = localStorage.getItem("user_id");
+		var ping = localStorage.getItem("ping");
+		$('body').css('height',$(document)[0].scrollHeight);
+		if(ping==1) {
+			$.ajax({
+				type: "post",
+				url: "/Newsall/" + user_id,
+				dataType: "json",
+				contentType: "application/json;charset=UTF-8",
+				success: function (data) {
+					var news = "";
+					for (var i = 0; i < data.length; i++) {
+						var t=gettime(data[i].news_date);
+						news += `
+				           <div class="riqi">${t}</div>
+		                   <div class="ping">
+		                   <img src="img/changting.png">
+			               <div class="context">
+                           ${data[i].news_text}
+			                </div>
+		                   </div>
+                      `;
+					}
+					$('.p').append(news);
+				}
+			});
+		}
+		else if(ping==2){
+            $.ajax({
+                type: "post",
+                url: "/replybyid/" + user_id,
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function (data) {
+                    var news = "";
+                    for (var i = 0; i < data.length; i++) {
+                        var t=gettime(data[i].reply_date);
+                        news += `
+				           <div class="riqi">${t}</div>
+		                   <div class="ping">
+		                   <img src="/ShowImagetouxiang/${data[i].touimage}">
+			               <div class="context">
+                           ${data[i].user.user_name}:${data[i].reply_content}
+			                </div>
+		                   </div>
+                      `;
+                    }
+                    $('.p').append(news);
+                }
+            });
+        }
+	layui.use('element', function(){
+	  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+	  //监听导航点击
+	  element.on('nav(demo)', function(elem){
+	    //console.log(elem)
+	    layer.msg(elem.text());
+	  });
+	});
+	</script>
+</html>

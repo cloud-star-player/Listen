@@ -1,0 +1,362 @@
+POST http://localhost:8080/newsupdate?news_text=123&news_title=123&news_author=3&news_type=1&news_id=10
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-19T121032.200.json
+
+###
+
+POST http://localhost:8080/newsadd?news_text=123&news_title=123&news_author=3&news_type=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-18T074053.500.html
+
+###
+
+POST http://localhost:8080/tonewsadd?news_text=123&news_title=123&news_author=3&news_type=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-18T074040.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-11T032824.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-11T032432.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T100030-2.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T100030-1.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T100030.200.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T095931.500.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T095207-1.500.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T095207.500.html
+
+###
+
+POST http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/musicall
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/userselectall/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T020934.404.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T104721.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T104055.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103747.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103701.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103350.500.html
+
+###
+
+GET http://localhost:8080/userselectall/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103344.404.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103115.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103050.500.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T103006.500.html
+
+###
+
+GET http://localhost:8080/userselectall/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T102930.404.html
+
+###
+
+GET http://localhost:8080/userselectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-05T102634.500.html
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T040953.200.html
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T035814.200.html
+
+###
+
+GET http://localhost:8080/selectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T033130.200.html
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T031121.200.html
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T031019.200.txt
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T031017.200.txt
+
+###
+
+GET http://localhost:8080/userselect/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-04T030941.200.txt
+
+###
+
+GET http://localhost:8080/selectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T085328.200.html
+
+###
+
+GET http://localhost:808/selectall
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:808/selectall
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/selectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T085311.200.html
+
+###
+
+GET http://localhost:8080/selectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T085305.200.html
+
+###
+
+GET http://localhost:8080/selectall
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T085151.200.html
+
+###
+
+GET http://localhost:8080/selectall?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T042918.404.html
+
+###
+
+GET http://localhost:8080/user/admin/12345?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T122732.200.json
+
+###
+
+GET http://localhost:8080/user/admin/12345?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T121641.200.json
+
+###
+
+GET http://localhost:8080/user/admin/12345?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T121306.200.json
+
+###
+
+GET http://localhost:8080/tologin?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T121245.200.html
+
+###
+
+GET http://localhost:8080/login?admin_code=admin&admin_password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T121223.404.html
+
+###
+
+GET http://localhost:8080/TranslateListen/tologin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/TranslateListen/tologin
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/TranslateListen
+Accept: */*
+Cache-Control: no-cache
+
+###
+

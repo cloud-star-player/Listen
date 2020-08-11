@@ -1,0 +1,106 @@
+body{
+	margin:0;
+	padding:0;
+	background: linear-gradient(160deg,#c45b96 40%,#975497 60%);
+}
+#dh a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2,form,figure, section, p, input, button { margin: 0; padding: 0 }
+ul,ol,dd,dt,dl{list-style-type:none;}
+a{text-decoration: none;}
+.top img{
+	width: 6rem;
+	height: 6rem;
+}
+.top{
+	width: 100%;
+	text-align: center;
+	margin-top: 3.5rem;
+	margin-bottom: 3rem;
+}
+.middle{
+	width:100%;
+	margin:auto;
+	
+}
+.s1{
+	color: red;
+	text-align: center;
+}
+.s2{
+	color: red;
+	text-align: center;
+}
+.middle div input{
+	width: 70%;
+	height: 3.5rem;
+	border: 0;
+	
+	color: #dfa1ca;
+	outline:none;
+	font-size: 1.2rem;
+	background-color:transparent;
+}
+#icons{
+	width:2rem ;
+	height:2rem;
+	border:#dfb1d5 0.1875rem solid;
+	border-radius:50%;
+	padding: 0.5rem;
+	margin-right:0.9rem;
+}
+.i1{
+	margin: auto;
+	margin-bottom: 2rem;
+	width: 80%;
+	display: flex;
+	flex-wrap: row;
+	justify-content: space-between;
+	align-items: center;
+	border:#d5d3d4 0.1875rem solid;
+	border-radius: 1rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+#delete{
+	width: 1.4375rem;
+	height: 2.0625rem;
+}
+#dh{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+}
+.deng{
+	text-align: center;
+	padding-top: 1.875rem;
+}
+.deng input{
+	width: 12rem;
+	height: 2.7rem;
+	border: 0;
+	background: #c992ba;
+	color:#d5d3d4;
+	border-radius:1rem ;
+}
+.dsa{
+	width:100%;
+	text-align: center;
+	color: #c5accc;
+	margin-top: 2.1rem;	
+}
+.tu{
+	margin-top: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.tu svg{
+	width:2.5rem;
+	height:2.5rem;
+	background: #FFFFFF;
+	border-radius:50%;
+}

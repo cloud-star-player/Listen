@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>引导页</title>
+	    <script type="text/javascript">
+	    	
+	   		document.addEventListener('plusready', function(){
+	   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+	   			
+	   		});
+	   		
+	    </script>
+	</head>
+	<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="css/lead.css">
+	<link type="text/css" rel="stylesheet" href="css/common.css">
+	<body>
+		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="l1">
+					<img src="img/lead.png" class="l1_img">
+					<div class="carousel_index">
+					    <div class="carousel_icon carousel_icon1"></div>
+					    <div class="carousel_icon carousel_icon2"></div>
+					    <div class="carousel_icon carousel_icon2"></div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide" id="l2">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574650073538" p-id="5813" version="1.1"><path fill="#ffffff" d="M 512.256 182.016 c -184.128 0 -333.376 149.248 -333.376 333.376 v 1.472 c 16.32 -5.312 33.664 -8.32 51.776 -8.32 c 1.536 0 3.008 0.128 4.544 0.256 v 333.184 h 56.32 c 10.048 0 18.176 -8.256 18.176 -18.24 V 518.272 c 0 -10.048 -8.128 -18.176 -18.176 -18.176 h -54.4 c 5.12 -147.648 126.272 -265.664 275.072 -265.664 s 269.888 118.08 275.072 265.664 h -50.368 c -9.984 0 -18.24 8.128 -18.24 18.176 v 305.472 c 0 9.984 8.256 18.24 18.24 18.24 h 56.32 v -333.44 c 18.304 0 35.84 3.072 52.288 8.512 v -1.664 c 0.128 -184.128 -149.056 -333.376 -333.248 -333.376 Z M 64 675.328 c 0 73.92 48.256 136.576 114.88 158.4 v -316.8 C 112.256 538.688 64 601.344 64 675.328 Z m 781.632 -158.272 v 316.352 C 912.064 811.52 960 748.992 960 675.328 c 0 -73.856 -47.936 -136.256 -114.368 -158.272 Z" p-id="5814" /></svg>
+					<h1 class="l2_p1">畅听</h1>
+					<h2 class="l2_p2">畅想音乐 听你想听</h2>
+				</div>
+				<div class="swiper-slide" id="l3">
+					<p class="l3_p1">畅听</p>
+					<p class="l3_p2">畅听为音乐而生</p>
+					<p class="l3_p3"><a href="./login.html">欢迎来到畅听新世界</a></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+$(window).resize(function() {swiper()})
+		//封装
+		$(function() {
+			swiper()
+		})
+		function swiper(){
+		//下标
+		//页面移动
+		var swiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+		swiper.on('slideChangeTransitionEnd', function () {
+		var txt = $('.swiper-slide-active').html(); 
+		});
+		$('.carousel_index').on('resize',function () {
+		    $('.carousel_icon carousel_icon2').css('background','url(../img/point.png)');
+		});
+		$('body').css('height', $(window).height());
+		$('swiper-slide').css('height', $(window).height());
+	}
+	$(window).load(function() {
+		$('body').css('height', $(window).height());
+	});
+	
+</script>	

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>首页</title>
+		<script type="text/javascript">
+			
+			document.addEventListener('plusready', function(){
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+				
+			});
+			
+		</script>
+	</head>
+	<link href="./css/index.css" type="text/css" rel="stylesheet"/>
+	<link href="./css/common.css" type="text/css" rel="stylesheet"/>
+	<link href="./css/caidan.css" type="text/css" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="./css/swiper.min.css">
+	<script type="text/javascript" src="./js/new_file.js"></script>
+	<script type="text/javascript" src="./js/caidan.js"></script>
+	<body>
+		<div class="right">
+		<div class="top">
+			<div><svg xmlns="http://www.w3.org/2000/svg" id="menu" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574082011862" p-id="3578" version="1.1"><path fill="#ffffff" d="M 832.2 264.6 H 192.3 c -35.2 0 -64 -28.8 -64 -64 s 28.8 -64 64 -64 h 639.8 c 35.2 0 64 28.8 64 64 c 0.1 35.2 -28.7 64 -63.9 64 Z M 832.2 577.9 H 196.1 c -35.2 0 -64 -28.8 -64 -64 s 28.8 -64 64 -64 h 636.1 c 35.2 0 64 28.8 64 64 s -28.8 64 -64 64 Z M 832.2 896.9 H 192.3 c -35.2 0 -64 -28.8 -64 -64 s 28.8 -64 64 -64 h 639.8 c 35.2 0 64 28.8 64 64 c 0.1 35.2 -28.7 64 -63.9 64 Z" p-id="3579" /></svg></div>
+			<div><a href="./my.html">我的</a></div>
+			<div><a href="./index.html"><strong>听歌</strong></a></div>
+			<div><a href="./indexchang.html">唱</a></div>
+			<div><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1027 1024" width="200" height="200" t="1574082180240" p-id="4355" version="1.1"><path fill="#ffffff" d="M 927.012 467.711 h -376.334 v -365.1 c 0 -16.8508 -16.8508 -39.3185 -39.3185 -39.3185 c -22.4677 0 -39.3185 22.4677 -39.3185 44.9354 v 365.1 H 106.941 c -22.4677 -5.61693 -44.9354 16.8508 -44.9354 39.3185 s 22.4677 39.3185 39.3185 39.3185 h 365.1 v 365.1 c 5.61693 22.4677 22.4677 44.9354 44.9354 44.9354 s 39.3185 -22.4677 39.3185 -39.3185 v -370.717 h 370.717 c 22.4677 0 39.3185 -22.4677 39.3185 -39.3185 s -11.2339 -44.9354 -33.7016 -44.9354 Z" p-id="4356" /></svg></div>
+		</div>
+		<div class="search">
+			<div class="search2">
+               <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574084036603" p-id="5866" version="1.1"><path fill="#ebd5e1" d="M 410.441 737.437 c -185.988 0 -337.304 -151.315 -337.304 -337.304 S 224.452 62.829 410.441 62.829 c 185.989 0 337.304 151.315 337.304 337.304 S 596.43 737.437 410.441 737.437 Z M 410.441 114.474 c -157.519 0 -285.659 128.147 -285.659 285.659 S 252.923 685.792 410.441 685.792 c 157.519 0 285.659 -128.148 285.659 -285.659 S 567.959 114.474 410.441 114.474 Z" p-id="5867" /><path fill="#ebd5e1" d="M 922.991 956.932 c -6.60646 0 -13.214 -2.52143 -18.2568 -7.5653 L 603.024 647.653 c -10.0857 -10.0816 -10.0857 -26.434 0 -36.5157 c 10.0867 -10.0857 26.4279 -10.0857 36.5157 0 L 941.249 912.854 c 10.0857 10.0744 10.0857 26.4279 0 36.5146 C 936.205 954.411 929.598 956.932 922.991 956.932 Z" p-id="5868" /></svg>				<div></div>
+               <input type="text" id="search" placeholder="一荣昊 模特">			
+			</div>
+		</div>
+		<div class="midden">
+			<div class="carousel_img">
+
+
+			</div>
+			<div class="menu">
+				<a href="#">
+				   <figure>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574151279764" p-id="5592" version="1.1"><path fill="#4d4d4d" d="M 533.982 929.246 v 61.3717 c 0 18.432 -14.7797 33.3824 -32.9728 33.3824 a 33.1776 33.1776 0 0 1 -32.9387 -33.3824 v -61.3717 a 100.147 100.147 0 0 1 -65.9115 -94.4469 v -111.309 c 0 -55.3301 44.2709 -100.181 98.8501 -100.181 c 54.6133 0 98.8843 44.8512 98.8843 100.181 v 111.275 a 100.147 100.147 0 0 1 -65.9115 94.4811 Z M 347.682 1024 H 255.044 C 131.14 1024 68.2667 966.656 68.2667 853.675 v -58.0949 c 0 -88.7467 127.249 -204.049 235.213 -263.851 c -51.2341 -61.44 -83.6949 -152.61 -83.6949 -241.903 C 219.785 121.856 342.665 0 512 0 c 169.301 0 292.181 121.856 292.181 289.792 c 0 89.3269 -32.4267 180.497 -83.6949 241.903 C 828.484 591.531 955.733 706.799 955.733 795.58 v 58.0949 c 0 112.981 -62.8736 170.325 -186.812 170.325 h -114.21 a 33.1776 33.1776 0 0 1 -32.9728 -33.4165 c 0 -18.432 14.7797 -33.3824 32.9728 -33.3824 h 114.21 c 100.352 0 120.9 -41.4037 120.9 -103.526 v -58.0949 c 0 -56.7296 -127.044 -175.991 -238.49 -223.915 l -51.2341 -22.016 l 43.6907 -34.9184 c 54.784 -43.7931 94.5152 -138.377 94.5152 -224.939 c 0 -131.311 -93.0475 -222.993 -226.304 -222.993 S 285.696 158.481 285.696 289.792 c 0 86.4939 39.7312 181.077 94.5493 224.905 l 43.6565 34.9184 l -51.2 22.016 c -111.479 47.9232 -238.524 167.185 -238.524 223.915 v 58.0949 c 0 62.1227 20.5824 103.526 120.9 103.526 h 92.6037 c 18.1931 0 32.9728 14.9845 32.9728 33.4165 S 365.875 1024 347.682 1024 Z m 153.327 -333.926 c 18.1931 0 32.9728 15.0187 32.9728 33.4165 v 111.275 c 0 18.432 -14.7797 33.4165 -32.9728 33.4165 a 33.2117 33.2117 0 0 1 -32.9387 -33.3824 v -111.309 c 0 -18.432 14.7797 -33.4165 32.9387 -33.4165" p-id="5593" /></svg>
+					<figcaption>歌手</figcaption>
+				   </figure>
+				</a>
+				<a href="#">
+				<figure>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon" id="mx_n_1574151913815" viewBox="0 0 1024 1024" width="200" height="200" t="1574151913805" p-id="6482" version="1.1"><path fill="#4d4d4d" d="M 64 512 h 128 a 64 64 0 0 1 64 64 v 384 a 64 64 0 0 1 -64 64 H 64 a 64 64 0 0 1 -64 -64 V 576 a 64 64 0 0 1 64 -64 Z M 448 0 h 128 a 64 64 0 0 1 64 64 v 896 a 64 64 0 0 1 -64 64 H 448 a 64 64 0 0 1 -64 -64 V 64 a 64 64 0 0 1 64 -64 Z m 384 256 h 128 a 64 64 0 0 1 64 64 v 640 a 64 64 0 0 1 -64 64 H 832 a 64 64 0 0 1 -64 -64 V 320 a 64 64 0 0 1 64 -64 Z" p-id="6483" /></svg>	
+					<figcaption>排行</figcaption>
+				</figure>
+				</a>
+				<a href="./yueku.html">
+				  <figure>
+				   	<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574167481396" p-id="10004" version="1.1"><path fill="#4d4d4d" d="M 891.937 65.6312 c 7.58886 1.81965 15.06 3.78266 21.3985 8.79718 c 10.6148 8.3968 15.8228 19.3915 16.4342 32.7424 c 0.091136 1.9927 0.039936 3.9936 0.039936 5.9904 c 0.001024 209.522 -0.157696 419.043 0.217088 628.564 c 0.043008 24.1777 -10.1325 41.7178 -28.4918 55.6739 c -20.6817 15.7225 -44.459 24.4941 -69.6146 29.5834 c -46.7026 9.44845 -92.9516 7.82848 -138.278 -7.62573 c -20.6572 -7.04307 -39.8479 -16.9206 -54.6908 -33.5135 c -22.3089 -24.9395 -20.5302 -54.9171 4.18918 -77.8158 c 18.0429 -16.7148 39.6882 -26.6117 63.0047 -32.9769 c 44.6956 -12.202 89.643 -12.5317 134.659 -1.49299 c 1.59642 0.391168 3.23379 0.617472 5.19066 0.984064 c 0 -115.844 0 -231.441 0 -347.868 c -7.53562 1.57389 -14.9156 3.05459 -22.2679 4.65818 c -148.854 32.4813 -297.698 65.0076 -446.587 97.3281 c -4.78925 1.03936 -5.5081 3.02182 -5.50502 7.29088 c 0.099328 143.619 -0.183296 287.24 0.33792 430.858 c 0.089088 24.6354 -10.199 42.3516 -28.9167 56.4562 c -21.1692 15.9519 -45.5004 24.6508 -71.1813 29.6653 c -46.4353 9.0665 -92.3453 7.1465 -137.276 -8.42547 c -20.1513 -6.9847 -38.8925 -16.6861 -53.4139 -32.8223 c -22.7451 -25.2744 -20.862 -55.5694 4.34586 -78.5326 c 19.8789 -18.1084 43.7719 -28.1201 69.4026 -34.3716 c 42.6148 -10.3956 85.3074 -10.0424 127.937 0.227328 c 1.5575 0.374784 3.14778 0.616448 5.49888 1.07008 c 0 -3.03616 0 -5.47021 0 -7.90528 c 0 -183.726 0.16384 -367.453 -0.202752 -551.179 c -0.047104 -23.6462 8.32614 -36.5158 30.6401 -45.3448 c 14.3882 -5.69344 29.9756 -8.5248 45.1779 -11.9603 c 122.352 -27.648 244.74 -55.1342 367.117 -82.6706 c 50.5723 -11.3797 101.145 -22.7584 151.71 -34.1647 c 1.08032 -0.243712 2.08998 -0.806912 3.13242 -1.22061 C 887.943 65.6312 889.94 65.6312 891.937 65.6312 Z" p-id="10005" /></svg>
+					<figcaption>乐库</figcaption>
+			      </figure>
+				</a>
+				<a href="#">
+				<figure>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574167454403" p-id="9686" version="1.1"><path fill="#4d4d4d" d="M 465.6 411.2 c 0 31.2 -24.8 56 -56 56 h -264 c -31.2 0 -56 -24.8 -56 -56 v -264 c 0 -31.2 24.8 -56 56 -56 h 264 c 31.2 0 56 24.8 56 56 v 264 Z M 933.6 411.2 c 0 31.2 -24.8 56 -56 56 h -264 c -31.2 0 -56 -24.8 -56 -56 v -264 c 0 -31.2 24.8 -56 56 -56 h 264 c 31.2 0 56 24.8 56 56 v 264 Z M 465.6 880 c 0 31.2 -24.8 56 -56 56 h -264 c -31.2 0 -56 -24.8 -56 -56 V 616 c 0 -31.2 24.8 -56 56 -56 h 264 c 31.2 0 56 24.8 56 56 v 264 Z M 933.6 880 c 0 31.2 -24.8 56 -56 56 h -264 c -31.2 0 -56 -24.8 -56 -56 V 616 c 0 -31.2 24.8 -56 56 -56 h 264 c 31.2 0 56 24.8 56 56 v 264 Z" p-id="9687" /></svg>
+					<figcaption>歌单分类</figcaption>
+				</figure>
+				</a>
+				<a href="#">
+				<figure> 
+				    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574167346917" p-id="8172" version="1.1" data-spm-anchor-id="a313x.7781069.0.i19"><path fill="#4d4d4d" d="M 687.397 397.546 V 260.681 c 0 -139.001 -102.985 -251.582 -231.131 -251.582 h -44.5879 c -128.38 0 -231.131 112.201 -231.131 251.582 v 244.912 c 0 138.884 103.102 251.582 231.131 251.582 h 44.5879 a 215.625 215.625 0 0 0 69.632 -11.5858 a 30.5152 30.5152 0 0 0 -19.7486 -57.7536 a 154.565 154.565 0 0 1 -49.9127 8.30903 h -44.5586 c -93.8569 0 -170.101 -85.1675 -170.101 -190.552 V 260.71 c 0 -105.882 75.8638 -190.552 170.101 -190.552 h 44.5879 c 93.9739 0 170.13 85.0505 170.13 190.552 v 136.836 a 30.5152 30.5152 0 0 0 61.0011 0 Z m -42.5399 398.102 a 297.428 297.428 0 0 1 -151.464 43.0958 h -102.868 c -160.475 0 -303.865 -140.815 -303.865 -301.056 a 30.5152 30.5152 0 1 0 -61.0304 0 c 0 194.092 170.862 362.086 364.895 362.086 h 103.161 a 358.693 358.693 0 0 0 182.857 -51.9607 a 30.5152 30.5152 0 0 0 -31.6855 -52.1655 Z m -199.739 54.4183 c -16.8521 0 -30.5152 13.5461 -30.5152 30.2519 v 110.533 c 0 16.6766 13.6631 30.2226 30.5152 30.2226 c 16.8521 0 30.5152 -13.5461 30.5152 -30.2226 v -110.533 c 0 -16.6766 -13.6631 -30.2226 -30.5152 -30.2226 Z M 815.865 491.52 V 240.026 l 141.605 -95.9634 a 30.5152 30.5152 0 1 1 34.6112 50.2638 l -113.927 78.4384 l -1.28731 319.751 c 0 1.60914 -0.117029 3.21829 -0.351086 4.76891 l 0.380343 6.84617 c -3.21829 74.3424 -66.5893 132.389 -141.897 129.58 c -75.4834 2.80869 -138.854 -55.2375 -142.043 -129.843 c 3.18903 -74.3424 66.5893 -132.389 141.839 -129.58 a 137.333 137.333 0 0 1 76.6245 19.7193 l 4.44709 -2.48686 Z m -80.7497 49.0935 c -38.7072 -2.57463 -72.0018 25.7463 -75.3079 63.1369 c 3.30606 37.888 36.6007 66.2089 75.3079 63.6343 c 38.2976 2.57463 71.5922 -25.7463 74.8983 -63.1369 a 70.2171 70.2171 0 0 0 -74.8983 -63.6343 Z" p-id="8173" /></svg>
+					<figcaption>听歌识曲</figcaption>
+				</figure>
+				</a>
+			</div>
+		</div>
+		<div class="midden2">
+			<ul class="chang">
+				<li><a href="#">新歌</a></li>
+				<li><a href="#">直播</a></li>
+				<li><a href="#">咨询</a></li>
+				<li><a href="#">MV</a></li>
+				<li><a href="#">视频</a></li>
+			</ul>
+		<div class="chang2">
+			<ul class="xingge">
+
+
+			</ul>
+			<ul class="zhibo">
+				<li>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+					    <img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li class="lifooter">@_@直播间已经到底啦</li>
+			</ul>
+			<ul class="zixun">
+
+			</ul>
+			<ul class="zhibo">
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+			</ul>
+			<ul class="zhibo">
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+				</li>
+				<li>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+					<div class="zhibo1">
+						<img src="img/33.jpg" class="img1">
+						<p class="zhibo1_a1">直播间号</p>
+						<p class="zhibo1_a2">主播</p>
+					</div>
+			</ul>
+		</div>
+		 <div class="footer">
+			<a>畅听，听你想听的音乐</a>
+			<div class="footer_svg">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon1" viewBox="0 0 1024 1024" width="200" height="200" t="1574234391004" p-id="9867" version="1.1"><path fill="#ffffff" d="M 512 1024 C 229.236 1024 0 794.764 0 512 S 229.236 0 512 0 s 512 229.236 512 512 s -229.236 512 -512 512 Z m 0 -46.5455 c 257.071 0 465.455 -208.384 465.455 -465.455 S 769.071 46.5455 512 46.5455 S 46.5455 254.929 46.5455 512 s 208.384 465.455 465.455 465.455 Z m 170.17 -446.324 L 443.811 696.18 a 23.2727 23.2727 0 0 1 -36.5149 -19.1535 V 346.996 a 23.2727 23.2727 0 0 1 36.5382 -19.1535 l 238.359 165.05 a 23.2727 23.2727 0 0 1 0 38.2604 Z" p-id="9868" /></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1144 1024" width="200" height="200" t="1574234474257" p-id="12006" version="1.1"><path fill="#ffffff" d="M 75.2941 150.588 a 75.2941 75.2941 0 1 1 0 -150.588 a 75.2941 75.2941 0 0 1 0 150.588 Z m 0 421.647 a 75.2941 75.2941 0 1 1 0 -150.588 a 75.2941 75.2941 0 0 1 0 150.588 Z m 0 421.647 a 75.2941 75.2941 0 1 1 0 -150.588 a 75.2941 75.2941 0 0 1 0 150.588 Z M 301.176 963.765 a 45.1765 45.1765 0 1 1 0 -90.3529 h 783.059 a 45.1765 45.1765 0 1 1 0 90.3529 H 301.176 Z m 0 -421.647 a 45.1765 45.1765 0 1 1 0 -90.3529 h 783.059 A 45.1765 45.1765 0 1 1 1084.24 542.118 H 301.176 Z m 0 -421.647 A 45.1765 45.1765 0 1 1 301.176 30.1176 h 783.059 A 45.1765 45.1765 0 1 1 1084.24 120.471 H 301.176 Z" p-id="12007" /></svg>
+			</div>
+		 </div>
+	</div>
+	<div class="left">
+		<ul class="zhanshi">
+			<li><a href="#"><dd>消息中心</dd><dt class="l_z_dt1"></dt></a></li>
+			<li><a href="#"><dd>皮肤中心</dd><dt class="l_z_dt2">默认皮肤</dt></a></li>
+			<li><a href="#"><dd>会员中心</dd><dt></dt></a></li>
+			<li><a href="#"><dd>流量包月</dd><dt class="l_z_dt2">听歌免流量</dt></a></li>
+			<li><a href="#"><dd>私人云盘</dd><dt></dt></a></li>
+		</ul>
+		<ul class="shezhis">	
+			<li><dd>定时关闭</dd>
+			<div class='toggle' id='switch'>
+			  <div class='toggle-text-off'>OFF</div>
+			  <div class='glow-comp'></div>
+			  <div class='toggle-button'></div>
+			  <div class='toggle-text-on'>ON</div>
+			</div>
+			</li>
+			<li><dd>仅wi-Fi联网</dd>
+			<div class='toggle' id='switch'>
+			  <div class='toggle-text-off'>OFF</div>
+			  <div class='glow-comp'></div>
+			  <div class='toggle-button'></div>
+			  <div class='toggle-text-on'>ON</div>
+			</div>
+			</li>
+			<li><dd>听歌栏模式</dd>
+			<div class='toggle' id='switch'>
+			  <div class='toggle-text-off'>OFF</div>
+			  <div class='glow-comp'></div>
+			  <div class='toggle-button'></div>
+			  <div class='toggle-text-on'>ON</div>
+			</div>
+			</li>
+		</ul>
+		<ul class="shezhis2">	
+			<li><dd>驾车模式</dd>
+			<div class='toggle' id='switch'>
+			  <div class='toggle-text-off'>OFF</div>
+			  <div class='glow-comp'></div>
+			  <div class='toggle-button'></div>
+			  <div class='toggle-text-on'>ON</div>
+			</div>
+			</li>
+			<li><a href="#"><dd>个性彩铃</dd></a></li>
+			<li><a href="#"><dd>听歌偏好</dd></a></li>
+			<li><a href="#"><dd>音乐工具</dd></a></li>
+		</ul>	
+		<ul class="shezhis2">	
+			<li><a href="#"><dd>导入外部歌曲</dd></a></li>
+			<li><a href="#"><dd>清理占用空间</dd></a></li>
+			<li><a href="#"><dd>帮助与反馈</dd></a></li>
+			<li><a href="#"><dd>关于畅听音乐</dd></a></li>
+		</ul>
+		<div class="l_foot">
+			<a href="#" class="l_foot_d">
+			   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574729907258" p-id="3471" version="1.1"><path fill="#333333" d="M 931.84 512 c 0 -59.6196 37.4329 -110.137 89.8844 -130.276 c -12.5156 -49.152 -31.8578 -95.4596 -57.1164 -138.012 C 913.18 266.581 851.058 257.252 808.96 215.04 c -42.0978 -42.0978 -51.4276 -104.334 -28.5582 -155.648 C 737.735 34.1333 691.428 14.7911 642.276 2.27556 c -20.2524 52.4516 -70.7698 89.8844 -130.276 89.8844 c -59.6196 0 -110.137 -37.4329 -130.276 -89.8844 c -49.152 12.5156 -95.4596 31.8578 -138.012 57.1164 c 22.8693 51.4276 13.5396 113.55 -28.5582 155.648 c -42.0978 42.0978 -104.334 51.4276 -155.648 28.672 C 34.1333 286.265 14.7911 332.572 2.27556 381.724 c 52.4516 20.2524 89.8844 70.7698 89.8844 130.276 c 0 59.6196 -37.4329 110.137 -89.8844 130.276 c 12.5156 49.152 31.8578 95.4596 57.1164 138.012 C 110.82 757.419 172.942 766.748 215.04 808.96 c 42.0978 42.0978 51.4276 104.334 28.5582 155.648 C 286.265 989.867 332.572 1009.21 381.724 1021.72 c 20.2524 -52.4516 70.7698 -89.8844 130.276 -89.8844 c 59.6196 0 110.137 37.4329 130.276 89.8844 c 49.152 -12.5156 95.4596 -31.8578 138.012 -57.1164 c -22.8693 -51.4276 -13.5396 -113.55 28.5582 -155.648 c 42.0978 -42.0978 104.334 -51.4276 155.648 -28.672 C 989.867 737.735 1009.21 691.428 1021.72 642.276 c -52.4516 -20.1387 -89.8844 -70.656 -89.8844 -130.276 Z M 512 651.947 c -77.2551 0 -139.947 -62.6916 -139.947 -139.947 s 62.6916 -139.947 139.947 -139.947 s 139.947 62.6916 139.947 139.947 s -62.6916 139.947 -139.947 139.947 Z" p-id="3472" /></svg>
+			   <dd>设置</dd>
+			</a>
+			<a href="#" class="l_foot_d">
+			   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574729979810" p-id="4316" version="1.1"><path d="M 689.493 42.6667 H 100.267 l 314.027 132.267 v 630.187 h 275.2 V 551.467 h 46.08 v 296.747 H 414.293 V 1024 L 0 848 V 0 h 735.573 v 339.627 h -46.08 Z M 1024 445.013 l -196.267 180.053 v -116.48 H 506.453 v -126.933 h 321.067 v -116.693 Z m 0 0" p-id="4317" /><path d="M 689.493 42.6667 H 100.267 l 314.027 132.267 v 630.187 h 275.2 V 551.467 h 46.08 v 296.747 H 414.293 V 1024 L 0 848 V 0 h 735.573 v 339.627 h -46.08 Z M 1024 445.013 l -196.267 180.053 v -116.48 H 506.453 v -126.933 h 321.067 v -116.693 Z m 0 0" p-id="4318" /></svg>
+			   <dd>立即登录</dd>
+			</a>	
+		</div>	
+	</div>	
+	<div class="left">
+			<ul class="zhanshi">
+				<li><a href="./news.html"><dd>消息中心</dd><dt class="l_z_dt1"></dt></a></li>
+				<li><a href="#"><dd>皮肤中心</dd><dt class="l_z_dt2">默认皮肤</dt></a></li>
+				<li><a href="#"><dd>会员中心</dd><dt></dt></a></li>
+				<li><a href="#"><dd>流量包月</dd><dt class="l_z_dt2">听歌免流量</dt></a></li>
+				<li><a href="#"><dd>私人云盘</dd><dt></dt></a></li>
+			</ul>
+			<ul class="shezhis">	
+				<li><dd>定时关闭</dd>
+				<div class='toggle' id='switch'>
+				  <div class='toggle-text-off'>OFF</div>
+				  <div class='glow-comp'></div>
+				  <div class='toggle-button'></div>
+				  <div class='toggle-text-on'>ON</div>
+				</div>
+				</li>
+				<li><dd>仅wi-Fi联网</dd>
+				<div class='toggle' id='switch'>
+				  <div class='toggle-text-off'>OFF</div>
+				  <div class='glow-comp'></div>
+				  <div class='toggle-button'></div>
+				  <div class='toggle-text-on'>ON</div>
+				</div>
+				</li>
+				<li><dd>听歌栏模式</dd>
+				<div class='toggle' id='switch'>
+				  <div class='toggle-text-off'>OFF</div>
+				  <div class='glow-comp'></div>
+				  <div class='toggle-button'></div>
+				  <div class='toggle-text-on'>ON</div>
+				</div>
+				</li>
+			</ul>
+			<ul class="shezhis2">	
+				<li><dd>驾车模式</dd>
+				<div class='toggle' id='switch'>
+				  <div class='toggle-text-off'>OFF</div>
+				  <div class='glow-comp'></div>
+				  <div class='toggle-button'></div>
+				  <div class='toggle-text-on'>ON</div>
+				</div>
+				</li>
+				<li><a href="#"><dd>个性彩铃</dd></a></li>
+				<li><a href="#"><dd>听歌偏好</dd></a></li>
+				<li><a href="#"><dd>音乐工具</dd></a></li>
+			</ul>	
+			<ul class="shezhis2">	
+				<li><a href="#"><dd>导入外部歌曲</dd></a></li>
+				<li><a href="#"><dd>清理占用空间</dd></a></li>
+				<li><a href="#"><dd>帮助与反馈</dd></a></li>
+				<li><a href="#"><dd>关于畅听音乐</dd></a></li>
+			</ul>
+			<div class="l_foot">
+				<a href="#" class="l_foot_d">
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574729907258" p-id="3471" version="1.1"><path fill="#333333" d="M 931.84 512 c 0 -59.6196 37.4329 -110.137 89.8844 -130.276 c -12.5156 -49.152 -31.8578 -95.4596 -57.1164 -138.012 C 913.18 266.581 851.058 257.252 808.96 215.04 c -42.0978 -42.0978 -51.4276 -104.334 -28.5582 -155.648 C 737.735 34.1333 691.428 14.7911 642.276 2.27556 c -20.2524 52.4516 -70.7698 89.8844 -130.276 89.8844 c -59.6196 0 -110.137 -37.4329 -130.276 -89.8844 c -49.152 12.5156 -95.4596 31.8578 -138.012 57.1164 c 22.8693 51.4276 13.5396 113.55 -28.5582 155.648 c -42.0978 42.0978 -104.334 51.4276 -155.648 28.672 C 34.1333 286.265 14.7911 332.572 2.27556 381.724 c 52.4516 20.2524 89.8844 70.7698 89.8844 130.276 c 0 59.6196 -37.4329 110.137 -89.8844 130.276 c 12.5156 49.152 31.8578 95.4596 57.1164 138.012 C 110.82 757.419 172.942 766.748 215.04 808.96 c 42.0978 42.0978 51.4276 104.334 28.5582 155.648 C 286.265 989.867 332.572 1009.21 381.724 1021.72 c 20.2524 -52.4516 70.7698 -89.8844 130.276 -89.8844 c 59.6196 0 110.137 37.4329 130.276 89.8844 c 49.152 -12.5156 95.4596 -31.8578 138.012 -57.1164 c -22.8693 -51.4276 -13.5396 -113.55 28.5582 -155.648 c 42.0978 -42.0978 104.334 -51.4276 155.648 -28.672 C 989.867 737.735 1009.21 691.428 1021.72 642.276 c -52.4516 -20.1387 -89.8844 -70.656 -89.8844 -130.276 Z M 512 651.947 c -77.2551 0 -139.947 -62.6916 -139.947 -139.947 s 62.6916 -139.947 139.947 -139.947 s 139.947 62.6916 139.947 139.947 s -62.6916 139.947 -139.947 139.947 Z" p-id="3472" /></svg>
+				   <dd>设置</dd>
+				</a>
+				<a href="#" class="l_foot_d">
+				   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574729979810" p-id="4316" version="1.1"><path d="M 689.493 42.6667 H 100.267 l 314.027 132.267 v 630.187 h 275.2 V 551.467 h 46.08 v 296.747 H 414.293 V 1024 L 0 848 V 0 h 735.573 v 339.627 h -46.08 Z M 1024 445.013 l -196.267 180.053 v -116.48 H 506.453 v -126.933 h 321.067 v -116.693 Z m 0 0" p-id="4317" /><path d="M 689.493 42.6667 H 100.267 l 314.027 132.267 v 630.187 h 275.2 V 551.467 h 46.08 v 296.747 H 414.293 V 1024 L 0 848 V 0 h 735.573 v 339.627 h -46.08 Z M 1024 445.013 l -196.267 180.053 v -116.48 H 506.453 v -126.933 h 321.067 v -116.693 Z m 0 0" p-id="4318" /></svg>
+				   <dd class="l_foot_d2">立即登录</dd>
+				</a>	
+			</div>	
+		</div>	
+	</body>
+</html>
+<script type="text/javascript" charset="utf-8">
+$(window).resize(function(){
+	$('body').css('height',$(document)[0].scrollHeight);
+	$('.left').css('height', $(window).height());
+
+});	
+$(window).load(function() {
+	var user_id=localStorage.getItem("user_id");
+	var t;                       //music_id
+	//获取菜单栏的高
+	$.ajax({
+		type:"post",
+		url:"/musicall",
+		dataType : "json",
+		contentType : "application/json;charset=UTF-8",
+		success:function(data) {
+            var music="";
+            var di=`<li class=\"lifooter\">@_@已经到底啦</li>`;
+			for (var i = 0; i < data.length; i++) {
+                music+=`
+			    <li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1027 1024" width="200" height="200" t="1574231312840" p-id="3400" version="1.1"><path fill="#4d4d4d" d="M 927.012 467.711 h -376.334 v -365.1 c 0 -16.8508 -16.8508 -39.3185 -39.3185 -39.3185 c -22.4677 0 -39.3185 22.4677 -39.3185 44.9354 v 365.1 H 106.941 c -22.4677 -5.61693 -44.9354 16.8508 -44.9354 39.3185 s 22.4677 39.3185 39.3185 39.3185 h 365.1 v 365.1 c 5.61693 22.4677 22.4677 44.9354 44.9354 44.9354 s 39.3185 -22.4677 39.3185 -39.3185 v -370.717 h 370.717 c 22.4677 0 39.3185 -22.4677 39.3185 -39.3185 s -11.2339 -44.9354 -33.7016 -44.9354 Z" p-id="3401" /></svg>
+						<a href="#">
+						<img src="/ShowImage/${data[i].music_image}">
+						<div class="x3">
+						<p>${data[i].music_name}</p>
+						<a>${data[i].author.author_name}</a>
+						<div class="xmv">
+						<a href="discuss.html" class="xmv_a1">
+						<input type="hidden" value="${data[i].music_id}" id="muid">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574231804469" p-id="5043" version="1.1"><path fill="#4d4d4d" d="M 755.2 389.12 c -33.28 0 -61.44 28.16 -61.44 61.44 S 721.92 512 755.2 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z M 512 816.64 c -35.84 0 -69.12 -5.12 -102.4 -10.24 l -143.36 87.04 l 2.56 -140.8 C 158.72 686.08 87.04 578.56 87.04 453.12 C 87.04 250.88 276.48 87.04 512 87.04 c 235.52 0 424.96 163.84 424.96 363.52 c 0 202.24 -189.44 366.08 -424.96 366.08 Z m 0 -791.04 c -268.8 0 -486.4 189.44 -486.4 424.96 c 0 133.12 71.68 253.44 181.76 332.8 V 998.4 l 212.48 -130.56 c 30.72 5.12 58.88 7.68 92.16 7.68 c 268.8 0 486.4 -189.44 486.4 -424.96 C 998.4 215.04 780.8 25.6 512 25.6 Z M 268.8 389.12 c -33.28 0 -61.44 28.16 -61.44 61.44 S 235.52 512 268.8 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z m 243.2 0 c -33.28 0 -61.44 28.16 -61.44 61.44 S 478.72 512 512 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z m 0 0" p-id="5044" /></svg>
+						<h7>${data[i].dcount}</h7>
+						</a>
+						<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574232873756" p-id="9078" version="1.1"><path fill="#4d4d4d" d="M 173.4 271.4 C 300.1 247.9 413 236.2 512 236.2 s 211.9 11.7 338.5 35.2 c 43.6 8.1 75.2 46.1 75.2 90.4 v 300.5 c 0 44.3 -31.6 82.3 -75.2 90.4 c -126.1 23.4 -239 35.1 -338.6 35.1 s -212.5 -11.7 -338.6 -35.1 c -43.6 -8.1 -75.2 -46.1 -75.2 -90.4 V 361.8 c 0.1 -44.4 31.8 -82.4 75.3 -90.4 Z m -29.2 90.4 v 300.5 c 0 22.1 15.8 41.1 37.6 45.2 c 123.5 22.9 233.6 34.4 330.2 34.4 s 206.7 -11.5 330.2 -34.4 c 21.8 -4.1 37.6 -23.1 37.6 -45.2 V 361.8 c 0 -22.2 -15.8 -41.2 -37.6 -45.2 c -124 -23 -234.1 -34.4 -330.2 -34.4 s -206.2 11.5 -330.2 34.4 c -21.8 4 -37.6 23 -37.6 45.2 Z" p-id="9079" /><path fill="#4d4d4d" d="M 173.4 271.4 C 300.1 247.9 413 236.2 512 236.2 s 211.9 11.7 338.5 35.2 c 43.6 8.1 75.2 46.1 75.2 90.4 v 300.5 c 0 44.3 -31.6 82.3 -75.2 90.4 c -126.1 23.4 -239 35.1 -338.6 35.1 s -212.5 -11.7 -338.6 -35.1 c -43.6 -8.1 -75.2 -46.1 -75.2 -90.4 V 361.8 c 0.1 -44.4 31.8 -82.4 75.3 -90.4 Z m -29.2 90.4 v 300.5 c 0 22.1 15.8 41.1 37.6 45.2 c 123.5 22.9 233.6 34.4 330.2 34.4 s 206.7 -11.5 330.2 -34.4 c 21.8 -4.1 37.6 -23.1 37.6 -45.2 V 361.8 c 0 -22.2 -15.8 -41.2 -37.6 -45.2 c -124 -23 -234.1 -34.4 -330.2 -34.4 s -206.2 11.5 -330.2 34.4 c -21.8 4 -37.6 23 -37.6 45.2 Z" p-id="9080" /><path fill="#4d4d4d" d="M 558.2 380.4 h 85.1 l 59.3 189.5 L 761 380.3 h 82.6 l -97.7 263.3 h -88.2 l -99.5 -263.2 Z m -322 0 h 107 l 41.3 160.2 l 41.1 -160.2 h 106.7 v 263.3 h -66.4 V 442.9 l -51.5 200.8 h -60.2 l -51.4 -200.8 v 200.8 h -66.6 V 380.4 Z" p-id="9081" /></svg>
+						</a>
+						</div>
+						</div>
+						</a>
+						<div class="d3">
+						<svg xmlns="http://www.w3.org/2000/svg" id="player" class="player" viewBox="0 0 1024 1024" width="200" height="200" t="1574231941234" p-id="8248" version="1.1"><path fill="#4d4d4d" d="M 465.408 334.848 l 220.16 147.456 c 16.384 11.264 16.384 35.328 0 46.592 l -220.16 147.456 c -18.944 12.8 -44.544 -0.512 -44.544 -23.552 V 357.888 c 0 -22.528 25.6 -35.84 44.544 -23.04 Z" p-id="8249" /><path fill="#4d4d4d" d="M 507.904 898.56 c -217.088 0 -393.216 -176.64 -393.216 -393.216 c 0 -217.088 176.64 -393.216 393.216 -393.216 S 901.12 288.768 901.12 505.344 c 0.512 217.088 -176.128 393.216 -393.216 393.216 Z m 0 -745.472 c -194.56 0 -352.256 158.208 -352.256 352.256 s 158.208 352.256 352.256 352.256 c 194.56 0 352.256 -158.208 352.256 -352.256 s -157.696 -352.256 -352.256 -352.256 Z" p-id="8250" /></svg>
+                       <input type="hidden" value="${data[i].music_id}" id="player2">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574231658289" p-id="4237" version="1.1"><path fill="#4d4d4d" d="M 500.093 419.556 c -52.6071 0 -95.2524 41.2597 -95.2524 92.1559 c 0 50.8972 42.6453 92.1559 95.2524 92.1559 c 52.6051 0 95.2504 -41.2597 95.2504 -92.1559 C 595.344 460.815 552.698 419.556 500.093 419.556 Z M 928.726 419.556 c -52.6071 0 -95.2504 41.2597 -95.2504 92.1559 c 0 50.8972 42.6432 92.1559 95.2504 92.1559 s 95.2524 -41.2597 95.2524 -92.1559 C 1023.98 460.815 981.332 419.556 928.726 419.556 Z M 95.2719 419.556 c -52.6051 0 -95.2504 41.2597 -95.2504 92.1559 c 0 50.8972 42.6453 92.1559 95.2504 92.1559 c 52.6071 0 95.2524 -41.2597 95.2524 -92.1559 C 190.524 460.815 147.879 419.556 95.2719 419.556 Z" p-id="4238" /></svg>
+						</div>
+						</li>`
+			}
+			music=music+di;
+			$('.xingge').append(music);
+			$(".xmv_a1").click(function () {
+				t=$(this).children('#muid').val();
+				t=parseInt(t);
+				localStorage.setItem("music_id",t);
+			})
+			$('.player').click(function () {
+				t=$(this).next('#player2').val();
+				localStorage.setItem("music_id",t);
+				window.location.href="player.html";
+			})
+		}
+	});
+
+	$.ajax({
+		type:"post",
+		url:"/bannerall",
+		dataType : "json",
+		contentType : "application/json;charset=UTF-8",
+		success:function(data) {
+			var banner="";
+			var ad=`<div class="carousel_index">
+				    <div class="carousel_icon carousel_icon1"></div>
+				    <div class="carousel_icon carousel_icon2"></div>
+				    <div class="carousel_icon carousel_icon2"></div>
+					<div class="carousel_icon carousel_icon2"></div>
+					<div class="carousel_icon carousel_icon2"></div>
+				</div>`
+			for (var i = 0; i < data.length; i++) {
+				banner+=`
+                <div class="car_img">
+					<img src="/BannerShowImage/${data[i].banner_image}"">
+			    </div>`
+			}
+			banner=banner+ad;
+			$('.carousel_img').append(banner);
+			$(document).ready(function(e) {
+				var imgObj = document.getElementsByClassName("car_img");
+				var imgLen = imgObj.length;
+				var windowWidth = $(window).width();
+				//注意这里
+			});
+			$('.l_foot_d2').bind("click",function(event){
+				location.href="./login.html";
+			})
+			$(document).ready(function(e) {
+				var imgObj = document.getElementsByClassName("car_img");
+				var imgLen = imgObj.length;
+				var windowWidth = $(window).width();
+
+				$(".car_img").bind("click",function(event){
+				});
+				int = setInterval(carouselImg,3000);
+				for(var i=0;i<imgLen;i++){
+					$(".car_img").eq(i).css({"top":"0","left":i*windowWidth});
+					imgObj[i].addEventListener('touchstart',touchstart,false);
+					imgObj[i].addEventListener('touchmove',touchmove,false);
+					imgObj[i].addEventListener('touchend',touchend,false);
+				}
+			});
+			function touchstart(event){
+				event.preventDefault();
+				if( event.targetTouches.length == 1 )
+				{
+					clearInterval(int);
+					var touch = event.targetTouches[0];
+					pressX = touch.pageX;
+				}
+			}
+			function touchmove(event){
+				event.preventDefault();
+				if( event.targetTouches.length == 1 )
+				{
+					var touch = event.targetTouches[0];
+					var spanX = touch.pageX - pressX ,
+							windowWidth = $(window).width();
+					var $car_img = $(".car_img"),
+							$this = $(this);
+					var thisIndex = $this.index(),
+							imgLen = $(".car_img").length;
+					for(var i=0;i < imgLen;i++){
+						$car_img.eq(i).css("left",windowWidth*(i-thisIndex)+spanX);
+					}
+				}
+			}
+			function touchend(event){
+				var $car_img = $(".car_img"),
+						$this = $(this),
+						$carousel_icon = $(".carousel_icon"),
+						windowWidth = $(window).width();
+				var thisIndex = $this.index(),
+						imgLen = $(".car_img").length;
+				var thisLeft = parseInt($(this).css("left"));
+				//向左滑动执行的方法
+				if(thisLeft < -32 && thisIndex < imgLen){
+					//当轮播图滑动最后一个位置时，当前轮播图位置不变
+					if(thisIndex == imgLen-1){
+						for(var i=0;i < imgLen;i++){
+							$car_img.eq(i).animate({"left":windowWidth*(i-thisIndex)},300);
+						}
+					}
+					//当轮播不在最后一个位置时，轮播图位置变化方法
+					else{
+						for(var i=0;i < imgLen;i++){
+							$car_img.eq(i).animate({"left":windowWidth*(i-(thisIndex+1))},300);
+							$carousel_icon.eq(i).addClass("carousel_icon2").removeClass("carousel_icon1");
+						}
+						$carousel_icon.eq(thisIndex+1).removeClass("carousel_icon2").addClass("carousel_icon1");
+					}
+				}
+				//向右滑动执行的方法
+				else if(thisLeft > 32 && thisIndex >= 0){
+					//当轮播图在第一个位置时
+					if( thisIndex == 0){
+						for(var i=0;i < imgLen;i++){
+							$car_img.eq(i).animate({"left":windowWidth*(i-thisIndex)},300);
+						}
+					}
+					//轮播图不在第一个位置
+					else{
+						for(var i=0;i < imgLen;i++){
+							$car_img.eq(i).animate({"left":windowWidth*(i-(thisIndex-1))},300);
+							$carousel_icon.eq(i).addClass("carousel_icon2").removeClass("carousel_icon1");
+						}
+						$carousel_icon.eq(thisIndex-1).removeClass("carousel_icon2").addClass("carousel_icon1");
+					}
+				}
+				//当滑动距离在大于-32px并且小于32px时，当前轮播图位置不变
+				else{
+					for(var i=0;i < imgLen;i++){
+						$car_img.eq(i).animate({"left":windowWidth*(i-thisIndex)},100);
+					}
+				}
+				int = setInterval(carouselImg,3000);
+			}
+			function carouselImg(){                         //轮播的点切换
+				var $car_img = $(".car_img"),
+						$carousel_icon = $(".carousel_icon"),
+						windowWidth = $(window).width();
+				var imgLen = $car_img.length,
+						imgZeroIndex = 0;
+				for(var i=0;i<imgLen;i++){
+					var everyImgLeft = parseInt($car_img.eq(i).css("left"));
+					if(everyImgLeft == 0){
+						imgZeroIndex = i;
+						break;
+					}
+				}
+				if(imgZeroIndex == imgLen-1){
+					for(var i=0;i<imgLen;i++){
+						$car_img.eq(i).animate({"left":windowWidth*i},300);
+						$carousel_icon.eq(i).removeClass("carousel_icon1").addClass("carousel_icon2");
+					}
+					$carousel_icon.eq(0).removeClass("carousel_icon2").addClass("carousel_icon1");
+				}
+				else{
+					for(var i=0;i<imgLen;i++){
+						$car_img.eq(i).animate({"left":windowWidth*(i-(imgZeroIndex+1))},300);
+						$carousel_icon.eq(i).removeClass("carousel_icon1").addClass("carousel_icon2");
+					}
+					$carousel_icon.eq(imgZeroIndex+1).removeClass("carousel_icon2").addClass("carousel_icon1");
+				}
+			}
+		}
+	})
+	$.ajax({
+		type:"post",
+		url:"/Newsalls",
+		dataType : "json",
+		contentType : "application/json;charset=UTF-8",
+		success:function(data) {
+
+			var news = "";
+			var di=`<li class=\"lifooter\">@_@已经到底啦</li>`;
+			for (var i = 0; i < data.length; i++) {
+				news += `
+			<li>
+					<a href="#" class="z_a1">
+					    <img src="/AuthorShowImage/${data[i].author.author_image}" class="zi_img">
+					    <div>
+						   <p>${data[i].news_title}</p>
+						   <div class="z_text">
+							   ${data[i].news_text}
+						   </div>
+					    </div>
+					</a>
+					<div class="z_d1">
+						<a class="z_a2">${data[i].author.author_name}</a>
+						<div class="z_d2">
+						    <a class="z_a3" href="#">
+							 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574231804469" p-id="5043" version="1.1"><path fill="#4d4d4d" d="M 755.2 389.12 c -33.28 0 -61.44 28.16 -61.44 61.44 S 721.92 512 755.2 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z M 512 816.64 c -35.84 0 -69.12 -5.12 -102.4 -10.24 l -143.36 87.04 l 2.56 -140.8 C 158.72 686.08 87.04 578.56 87.04 453.12 C 87.04 250.88 276.48 87.04 512 87.04 c 235.52 0 424.96 163.84 424.96 363.52 c 0 202.24 -189.44 366.08 -424.96 366.08 Z m 0 -791.04 c -268.8 0 -486.4 189.44 -486.4 424.96 c 0 133.12 71.68 253.44 181.76 332.8 V 998.4 l 212.48 -130.56 c 30.72 5.12 58.88 7.68 92.16 7.68 c 268.8 0 486.4 -189.44 486.4 -424.96 C 998.4 215.04 780.8 25.6 512 25.6 Z M 268.8 389.12 c -33.28 0 -61.44 28.16 -61.44 61.44 S 235.52 512 268.8 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z m 243.2 0 c -33.28 0 -61.44 28.16 -61.44 61.44 S 478.72 512 512 512 s 61.44 -28.16 61.44 -61.44 s -28.16 -61.44 -61.44 -61.44 Z m 0 0" p-id="5044" /></svg>
+							 <h7> </h7>
+						   </a>
+						   <a href="#" class="z_a4">
+							   <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574334099221" p-id="3394" version="1.1"><path fill="#4d4d4d" d="M 930.503 373.675 a 27.7333 27.7333 0 0 1 -21.5609 10.3253 H 421.461 a 28.2169 28.2169 0 0 0 -27.9893 28.4444 v 256.484 a 27.9893 27.9893 0 0 1 -55.9502 0 V 412.444 c 0 -47.1324 37.5751 -85.3333 83.9111 -85.3333 h 422.884 l -74.752 -74.752 a 27.9609 27.9609 0 1 1 39.5378 -39.5378 l 121.372 121.316 a 27.9609 27.9609 0 0 1 0 39.5378 Z m -89.4862 197.234 c 0 -15.7013 12.5156 -28.4444 27.9609 -28.4444 c 15.4453 0 27.9609 12.7431 27.9609 28.4444 V 839.111 c 0 47.1324 -37.5467 85.3333 -83.9111 85.3333 H 197.689 c -46.3644 0 -83.9111 -38.2009 -83.9111 -85.3333 v -654.222 c 0 -47.1324 37.5467 -85.3333 83.9111 -85.3333 h 375.609 c 15.4453 0 27.9609 12.7431 27.9609 28.4444 s -12.5156 28.4444 -27.9609 28.4444 H 197.689 a 28.2169 28.2169 0 0 0 -27.9609 28.4444 v 654.222 c 0 15.7013 12.5156 28.4444 27.9609 28.4444 h 615.339 a 28.2169 28.2169 0 0 0 27.9893 -28.4444 v -268.203 Z" p-id="3395" /></svg>
+						   </a>
+						</div>
+					</div>
+				</li>
+			`
+			}
+			news=news+di;
+			$('.zixun').append(news);
+
+		}
+	});
+	var count1="";
+	var count2="";
+	$.ajax({
+		type:"post",
+	    url:"/selectNewc/"+user_id,
+		dataType : "json",
+		contentType : "application/json;charset=UTF-8",
+		success:function(data) {
+			count1=data;
+
+		}
+	});
+	$.ajax({
+		type:"post",
+		url:"/replybyidcount/"+user_id,
+		dataType : "json",
+		contentType : "application/json;charset=UTF-8",
+		success:function(data) {
+			count2=data;
+
+		}
+	});
+	var count=t=parseInt(count1+count2);
+	$('.l_z_dt1').append(count);
+	$('.left').css('height', $(window).height());
+	$('.left').css('left', '-17.625rem');
+    $('body').css('height',$(document)[0].scrollHeight);
+	$('.chang2>ul:eq(0)').siblings('.chang2 ul').hide();
+	$('.chang>li:eq(0)').css('font-size','1.5rem');
+	$('.chang2>ul:eq(0)').show();
+	$('.chang>li').mouseover(function() {
+		var index = $(this).index()
+		console.log(index);
+		$('.chang>li:eq(' + index + ')').css('font-size','1.5rem');
+		$('.chang>li:eq(' + index + ')').siblings('.chang li').css('font-size','1rem');
+		$('.chang2>ul:eq(' + index + ')').siblings('.chang2 ul').hide();
+		$('.chang2>ul:eq(' + index + ')').show();
+	});
+	$('#search').click(function () {
+		location.href="./find.html";
+	})
+	$(function(){
+	 //限制字符个数
+	    $(".z_text").each(function(){
+	    var maxwidth=48;
+	    if($(this).text().length>maxwidth){ 
+		   $(this).text($(this).text().substring(0,maxwidth)); 
+		   $(this).html($(this).html()+'…');
+	   }
+	   });
+	});
+})
+
+jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeOutQuad",swing:function(e,f,a,h,g){return jQuery.easing[jQuery.easing.def](e,f,a,h,g)},easeInQuad:function(e,f,a,h,g){return h*(f/=g)*f+a},easeOutQuad:function(e,f,a,h,g){return -h*(f/=g)*(f-2)+a},easeInOutQuad:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f+a}return -h/2*((--f)*(f-2)-1)+a},easeInCubic:function(e,f,a,h,g){return h*(f/=g)*f*f+a},easeOutCubic:function(e,f,a,h,g){return h*((f=f/g-1)*f*f+1)+a},easeInOutCubic:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f+a}return h/2*((f-=2)*f*f+2)+a},easeInQuart:function(e,f,a,h,g){return h*(f/=g)*f*f*f+a},easeOutQuart:function(e,f,a,h,g){return -h*((f=f/g-1)*f*f*f-1)+a},easeInOutQuart:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f*f+a}return -h/2*((f-=2)*f*f*f-2)+a},easeInQuint:function(e,f,a,h,g){return h*(f/=g)*f*f*f*f+a},easeOutQuint:function(e,f,a,h,g){return h*((f=f/g-1)*f*f*f*f+1)+a},easeInOutQuint:function(e,f,a,h,g){if((f/=g/2)<1){return h/2*f*f*f*f*f+a}return h/2*((f-=2)*f*f*f*f+2)+a},easeInSine:function(e,f,a,h,g){return -h*Math.cos(f/g*(Math.PI/2))+h+a},easeOutSine:function(e,f,a,h,g){return h*Math.sin(f/g*(Math.PI/2))+a},easeInOutSine:function(e,f,a,h,g){return -h/2*(Math.cos(Math.PI*f/g)-1)+a},easeInExpo:function(e,f,a,h,g){return(f==0)?a:h*Math.pow(2,10*(f/g-1))+a},easeOutExpo:function(e,f,a,h,g){return(f==g)?a+h:h*(-Math.pow(2,-10*f/g)+1)+a},easeInOutExpo:function(e,f,a,h,g){if(f==0){return a}if(f==g){return a+h}if((f/=g/2)<1){return h/2*Math.pow(2,10*(f-1))+a}return h/2*(-Math.pow(2,-10*--f)+2)+a},easeInCirc:function(e,f,a,h,g){return -h*(Math.sqrt(1-(f/=g)*f)-1)+a},easeOutCirc:function(e,f,a,h,g){return h*Math.sqrt(1-(f=f/g-1)*f)+a},easeInOutCirc:function(e,f,a,h,g){if((f/=g/2)<1){return -h/2*(Math.sqrt(1-f*f)-1)+a}return h/2*(Math.sqrt(1-(f-=2)*f)+1)+a},easeInElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k)==1){return e+l}if(!j){j=k*0.3}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}return -(g*Math.pow(2,10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j))+e},easeOutElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k)==1){return e+l}if(!j){j=k*0.3}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}return g*Math.pow(2,-10*h)*Math.sin((h*k-i)*(2*Math.PI)/j)+l+e},easeInOutElastic:function(f,h,e,l,k){var i=1.70158;var j=0;var g=l;if(h==0){return e}if((h/=k/2)==2){return e+l}if(!j){j=k*(0.3*1.5)}if(g<Math.abs(l)){g=l;var i=j/4}else{var i=j/(2*Math.PI)*Math.asin(l/g)}if(h<1){return -0.5*(g*Math.pow(2,10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j))+e}return g*Math.pow(2,-10*(h-=1))*Math.sin((h*k-i)*(2*Math.PI)/j)*0.5+l+e},easeInBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}return i*(f/=h)*f*((g+1)*f-g)+a},easeOutBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}return i*((f=f/h-1)*f*((g+1)*f+g)+1)+a},easeInOutBack:function(e,f,a,i,h,g){if(g==undefined){g=1.70158}if((f/=h/2)<1){return i/2*(f*f*(((g*=(1.525))+1)*f-g))+a}return i/2*((f-=2)*f*(((g*=(1.525))+1)*f+g)+2)+a},easeInBounce:function(e,f,a,h,g){return h-jQuery.easing.easeOutBounce(e,g-f,0,h,g)+a},easeOutBounce:function(e,f,a,h,g){if((f/=g)<(1/2.75)){return h*(7.5625*f*f)+a}else{if(f<(2/2.75)){return h*(7.5625*(f-=(1.5/2.75))*f+0.75)+a}else{if(f<(2.5/2.75)){return h*(7.5625*(f-=(2.25/2.75))*f+0.9375)+a}else{return h*(7.5625*(f-=(2.625/2.75))*f+0.984375)+a}}}},easeInOutBounce:function(e,f,a,h,g){if(f<g/2){return jQuery.easing.easeInBounce(e,f*2,0,h,g)*0.5+a}return jQuery.easing.easeOutBounce(e,f*2-g,0,h,g)*0.5+h*0.5+a}});
+</script>

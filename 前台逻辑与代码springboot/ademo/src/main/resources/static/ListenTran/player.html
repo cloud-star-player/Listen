@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>播放</title>
+	<script type="text/javascript">
+
+		document.addEventListener('plusready', function(){
+			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+		});
+
+	</script>
+</head>
+<link href="./css/player.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="./js/new_file.js"></script>
+<body>
+
+<div class="up">
+</div>
+<div class="top_2">
+	<a href="#">标准∨</a>
+	<a href="#">MV</a>
+	<a href="#">音效</a>
+	<a href="#">封面∨</a>
+</div>
+<ul class="midden">
+
+</ul>
+<div class="muic">
+
+</div>
+<div class="progress">
+	<span class="start"></span>
+	<div class="progress-bar">
+		<div class="now"></div>
+	</div>
+	<span class="end"></span>
+</div>
+<div class="player">
+	<svg id="i1"xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574603637322" p-id="9996" version="1.1"><path fill="#ffffff" d="M 987.756 477.122 c -11.646 -113.361 -80.128 -215.937 -180.243 -270.32 c -17.846 -9.727 -40.938 -0.545 -47.227 18.805 c -8.758 26.607 14.848 38.042 33.236 49.791 c 39.959 25.541 73.284 61.333 95.849 102.999 c 47.227 87.073 44.668 195.637 -6.739 280.256 c -50.758 83.442 -143.173 135.593 -240.82 135.593 h -129.91 c -28.853 0 -43.806 36.114 -23.398 56.539 l 91.253 91.253 c 30.238 30.238 76.931 -16.778 46.793 -46.799 l -34.72 -34.72 h 50.009 c 203.227 -0.097 366.463 -181.426 345.957 -383.351 c -1.181 -11.646 1.181 11.646 0 0 v 0 Z M 641.685 230.946 c 20.723 0 45.616 7.584 59.508 -12.817 c 13.898 -20.305 0.545 -49.044 -24.043 -51.602 c -21.475 -2.25 -51.062 -7.691 -64.115 14.637 c -12.602 21.695 3.636 49.79 28.63 49.79 v 0 Z M 353.097 792.742 c -147.341 -15.075 -259.847 -146.921 -252.478 -294.675 c 7.476 -147.77 133.445 -267.108 281.201 -267.108 h 129.91 c 28.853 0 43.803 -36.219 23.398 -56.539 l -91.253 -91.253 c -30.137 -30.137 -77.036 16.656 -46.799 46.799 l 34.72 34.72 h -50.005 c -208.769 0 -373.847 190.817 -344.367 397.243 c 14.63 102.252 75.755 194.461 164.117 247.989 c 43.906 26.607 93.593 43.283 144.66 48.501 c 42.518 4.176 49.461 -61.333 6.839 -65.708 c -9.404 -0.972 18.157 1.914 0 0 v 0 Z M 353.097 792.742 Z" p-id="9997" /><path fill="#ffffff" d="M 607.379 649.879 h -162.084 v -30.869 h 63.353 v -214.643 l -64.961 18.817 v -32.915 l 100.525 -29.163 v 257.915 h 63.145 v 30.869 Z M 607.379 649.879 Z" p-id="9998" /></svg>
+	<div class="p2">
+		<svg xmlns="http://www.w3.org/2000/svg" id="umusic" class="umusic" viewBox="0 0 1024 1024" width="200" height="200" t="1574603579460" p-id="7809" version="1.1"><path fill="#ffffff" d="M 511.719 959.265 c -247.233 0 -447.655 -200.422 -447.655 -447.653 S 264.485 63.9566 511.719 63.9566 s 447.652 200.422 447.652 447.653 S 758.951 959.265 511.719 959.265 Z M 511.719 119.912 c -216.33 0 -391.698 175.37 -391.698 391.698 S 295.389 903.307 511.719 903.307 s 391.696 -175.369 391.696 -391.697 S 728.048 119.912 511.719 119.912 Z M 645.171 671.845 c -63.3017 -37.3005 -146.03 -83.9275 -200.243 -124.558 c -27.3755 -20.5183 -19.8644 -61.5089 8.57326 -79.649 c 58.4881 -37.3057 133.721 -81.0008 191.848 -116.757 c 28.9381 -17.8014 48.2253 -0.391926 48.2253 29.462 c 0 68.4684 0 188.217 0 260.587 C 693.576 677.236 674.528 689.143 645.171 671.845 Z M 637.478 442.25 c 0 -12.9213 -6.17258 -17.6285 -16.0935 -12.0095 c -29.374 16.642 -82.1971 49.0368 -114.561 68.6495 c -12.7944 7.75564 -11.5296 18.4267 0 25.8436 c 30.1691 19.405 85.5566 52.2162 114.964 68.8777 c 9.68252 5.48697 15.6893 0.355087 15.6893 -13.0103 C 637.478 545.455 637.478 476.9 637.478 442.25 Z M 357.834 679.48 l -27.9772 0 c -7.72596 0 -13.9886 -6.26366 -13.9886 -13.9896 L 315.868 357.728 c 0 -7.72596 6.26263 -13.9896 13.9886 -13.9896 l 27.9772 0 c 7.72903 0 13.9917 6.26366 13.9917 13.9896 l 0 307.762 C 371.825 673.217 365.563 679.48 357.834 679.48 Z" p-id="7810" /></svg>
+		<img src="img/zanting.svg" id="bofang">
+		<svg xmlns="http://www.w3.org/2000/svg" id="bmusic" class="bmusic" viewBox="0 0 1024 1024" width="200" height="200" t="1574603615845" p-id="9194" version="1.1"><path fill="#ffffff" d="M 960 512 c 0 247.424 -200.576 448 -448 448 S 64 759.424 64 512 S 264.576 64 512 64 s 448 200.576 448 448 Z m -64 0 c 0 -212.096 -171.904 -384 -384 -384 S 128 299.904 128 512 s 171.904 384 384 384 s 384 -171.904 384 -384 Z m -288 50.88 l -206.72 135.168 a 32 32 0 0 1 -49.504 -26.784 v -320 a 32 32 0 0 1 49.504 -26.784 L 608 459.648 V 320 h 64 v 384 h -64 v -141.12 Z m -192.224 -152.448 v 201.696 l 154.24 -100.864 l -154.24 -100.832 Z" p-id="9195" /></svg>
+	</div>
+	<svg id="i2" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574603670547" p-id="10680" version="1.1"><path fill="#ffffff" d="M 103.68 252.155 h 519.685 v -74.24 H 103.68 c -20.5107 0 -37.12 16.6093 -37.12 37.12 s 16.6093 37.12 37.12 37.12 Z m 0 296.965 h 92.8 v -74.24 H 103.68 A 37.1098 37.1098 0 0 0 66.56 512 a 37.1098 37.1098 0 0 0 37.12 37.12 Z M 66.56 808.96 a 37.1098 37.1098 0 0 0 37.12 37.12 h 519.685 v -74.24 H 103.68 A 37.1098 37.1098 0 0 0 66.56 808.96 Z m 853.765 -334.08 H 400.64 v 74.24 h 519.685 A 37.1098 37.1098 0 0 0 957.44 512 a 37.1046 37.1046 0 0 0 -37.1149 -37.12 Z m 0 296.96 h -92.8 v 74.24 h 92.8 A 37.1046 37.1046 0 0 0 957.44 808.96 a 37.1098 37.1098 0 0 0 -37.1149 -37.12 Z M 957.44 215.04 a 37.1098 37.1098 0 0 0 -37.1149 -37.1251 h -92.8 v 74.24 h 92.8 A 37.1046 37.1046 0 0 0 957.44 215.04 Z m -231.997 129.92 a 46.3974 46.3974 0 0 0 46.4026 -46.4026 V 131.517 a 46.3974 46.3974 0 0 0 -46.4026 -46.4026 a 46.3974 46.3974 0 0 0 -46.3974 46.4026 v 167.04 a 46.3974 46.3974 0 0 0 46.3974 46.4026 Z M 252.16 428.483 v 167.04 a 46.3923 46.3923 0 0 0 46.4026 46.3974 a 46.3923 46.3923 0 0 0 46.4026 -46.3974 V 428.483 a 46.3974 46.3974 0 0 0 -46.4026 -46.4026 a 46.3974 46.3974 0 0 0 -46.4026 46.4026 Z m 473.283 250.563 a 46.3923 46.3923 0 0 0 -46.3974 46.3974 v 167.04 a 46.3923 46.3923 0 0 0 46.3974 46.4026 a 46.3974 46.3974 0 0 0 46.4026 -46.4026 v -167.04 a 46.3974 46.3974 0 0 0 -46.4026 -46.3974 Z" p-id="10681" /></svg>
+</div>
+<div id="outputDiv">
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	var user_id=localStorage.getItem("user_id");
+	var music_id=localStorage.getItem("music_id");
+	$(window).load(function () {
+
+		$.ajax({                                                                  //展示作者信息
+			type: "post",
+			url:"/musicbyid/"+music_id+"/"+user_id,
+			dataType: "json",
+			contentType: "application/json;charset=UTF-8",
+			success: function (data) {
+				$("body").css("background-image","url(/ShowImage/"+data.music_image+")");
+                var up = "";
+				var muic = "";
+				var dcount = "";
+				var guanzhu="";
+                var guanzhu2="";
+				if(data.guanzhu==0){
+					guanzhu="关注";
+                    guanzhu2=0;
+				}else{
+					guanzhu="已关注";
+                    guanzhu2=1;
+				}
+				$('.umusic').click(function () {
+					$.ajax({
+						type:"post",
+						url:"/umusic_id/"+music_id,
+						dataType: "json",
+						contentType: "application/json;charset=UTF-8",
+						success:function (data) {
+							if(data==null) {
+								alert("已到歌首");
+								return;
+							}else{
+								localStorage.setItem("music_id",data);
+								window.location.reload();
+							}
+						}
+					})
+				})
+				$('.bmusic').click(function () {
+					$.ajax({
+						type:"post",
+						url:"/bmusic_id/"+music_id,
+						dataType: "json",
+						contentType: "application/json;charset=UTF-8",
+						success:function (data) {
+							if(data==null) {
+								alert("已到歌尾");
+								return;
+							}else{
+								localStorage.setItem("music_id",data);
+								window.location.reload();
+							}
+						}
+					})
+				})
+				up = `<div class="top">
+			<a href="javascript:history.back()"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574580567312" p-id="5377" version="1.1"><path fill="#ffffff" d="M 766.862 1021.72 c -10.24 0 -20.594 -3.64 -28.444 -10.922 L 228.693 538.396 c -15.701 -14.563 -15.701 -38.229 0 -52.792 L 738.418 13.198 c 15.701 -14.563 41.187 -14.563 56.889 0 c 15.701 14.564 15.701 38.23 0 52.793 L 314.027 512 l 481.28 446.009 c 15.701 14.563 15.701 38.23 0 52.793 c -7.851 7.282 -18.205 10.922 -28.445 10.922 Z" p-id="5378" /></svg></a>
+			<h2>${data.music_name}</h2>
+			<a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574594038190" p-id="1743" version="1.1"><path fill="#ffffff" d="M 155.732 512 m -91.138 0 a 91.138 91.138 0 1 0 182.276 0 a 91.138 91.138 0 1 0 -182.276 0 Z" p-id="1744" /><path fill="#ffffff" d="M 520.285 512 m -91.138 0 a 91.138 91.138 0 1 0 182.276 0 a 91.138 91.138 0 1 0 -182.276 0 Z" p-id="1745" /><path fill="#ffffff" d="M 868.268 512 m -91.138 0 a 91.138 91.138 0 1 0 182.276 0 a 91.138 91.138 0 1 0 -182.276 0 Z" p-id="1746" /></svg></a>
+		   </div>
+		   <p class="anothor">
+			<a href="#" class="a1">${data.author.author_name}</a>
+			<a class="a2">${guanzhu}</a>
+			<input type="hidden" id="guanzhu" value="${guanzhu2}">
+			<input type="hidden" id="author" value="${data.music_author_id}">
+	     	</p>`;
+
+                muic = `<audio src="/ShowMusic/${data.music_music}" autoplay="autoplay" id="music"></audio>`;
+				$('.muic').append(muic);
+                const audio = document.getElementById('music');//进度条制作
+                const start = document.querySelector('.start');
+                const end = document.querySelector('.end');
+                const progressBar = document.querySelector('.progress-bar');
+                const now = document.querySelector('.now');
+                function conversion(value) {
+                    let minute = Math.floor(value / 60);
+                    minute = minute.toString().length === 1 ? ('0' + minute) : minute;
+                    let second = Math.round(value % 60);
+                    second = second.toString().length === 1 ? ('0' + second) : second;
+                    return `${minute}:${second}`;
+                }
+                audio.onloadedmetadata = function (e) {
+                    setTimeout(function () {
+                        end.innerHTML = conversion(audio.duration);
+                    }, 1000);
+                    start.innerHTML = conversion(audio.currentTime);
+                }
+				audio.addEventListener('ended', function () {                 //音乐播放结束时加热度
+					$.ajax({
+						type:"post",
+						url:"/hotup/"+music_id,
+						dataType: "json",
+						contentType: "application/json;charset=UTF-8",
+						success:function (data) {
+						}
+					})
+					$('.bmusic').click();
+				}, false);
+                progressBar.addEventListener('click', function (event) {
+                    let coordStart = this.getBoundingClientRect().left;
+                    let coordEnd = event.pageX;
+                    let p = (coordEnd - coordStart) / this.offsetWidth;
+                    now.style.width = p.toFixed(3) * 100 + '%';
+
+					audio.currentTime = p * audio.duration;
+					$("#bofang").attr("src","img/zanting.svg")
+					audio.play();
+                })
+                setInterval(() => {
+                    start.innerHTML = conversion(audio.currentTime);
+                now.style.width = audio.currentTime / audio.duration.toFixed(3) * 100 + '%';
+            }, 1000)
+				$('.up').append(up);                      //作者信息展示
+
+
+                $(".a2").click(function () {                                   //点击关注作者
+                    var guanzhu2 = $('#guanzhu').val();
+                    var author_id=$('#author').val();
+                    if (guanzhu2 == 0) {
+                        $(".a2").html("已关注");
+                        $('#guanzhu').val(1);
+                        $.ajax({
+                            type: "post",
+                            url: "/readd/" + user_id + "/" + author_id,                        //音乐id
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            success: function (data) {
+                            }
+                        })
+                    } else {
+                        $(".a2").html("关注");
+                        $('#guanzhu').val(0);
+                        $.ajax({
+                            type: "post",
+                            url: "/redel/" + user_id + "/" + author_id,                        //音乐id
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            success: function (data) {
+                            }
+                        })
+                    }
+                })
+
+				$.ajax({                                                                 //音乐评论数和收藏状态
+					type: "post",
+					url:"/discussbyid2/"+music_id+"/"+user_id,
+					dataType: "json",
+					contentType: "application/json;charset=UTF-8",
+					success: function (data) {
+						var dsta="";
+						var dstav="";
+						var disby2=""
+						if(data.dzan>0){
+							dsta="img/shoucangf.svg";
+							dstav=1;
+						}else{
+							dsta="img/shoucang.svg";
+							dstav=0;
+						}
+						disby2=`
+						<li>
+		<img src="${dsta}" id="m1">
+		<input type="hidden" value="${dstav}" id="m12">
+	</li>
+	<li>
+		<svg xmlns="http://www.w3.org/2000/svg" id="m2" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574597089754" p-id="3319" version="1.1"><path fill="#ffffff" d="M 551.385 672.374 L 751.143 472.615 l 55.6898 55.6898 l -278.528 278.528 l -6.77415 -6.77415 l -6.69538 6.77415 L 236.308 528.305 L 291.998 472.615 L 472.615 653.233 V 0 h 78.7692 v 672.374 Z M 945.231 945.231 V 393.846 H 708.923 V 315.077 h 315.077 v 708.923 H 0 V 315.077 h 315.077 v 78.7692 H 78.7692 v 551.385 h 866.462 Z" p-id="3320" /></svg>
+	</li>
+	<li>
+		<svg xmlns="http://www.w3.org/2000/svg" id="m3" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574597118621" p-id="4093" version="1.1"><path fill="#ffffff" d="M 938.767 935.726 H 92.2722 V 89.2326 h 420.403 V 4.01326 H 46.8225 C 24.0985 4.01326 7.05288 26.7373 7.05288 49.463 V 981.175 c 0 22.724 17.0456 39.7679 39.7696 39.7679 h 931.712 c 22.7257 0 39.7696 -17.0439 39.7696 -39.7679 V 532.368 h -85.2177 v 403.357 h 5.68014 Z m 0 0" p-id="4094" /><path fill="#ffffff" d="M 976.885 6.28222 H 636.014 v 85.2211 h 244.293 l -437.449 437.45 l 56.8083 56.8118 L 934.069 151.363 v 261.658 h 82.5857 V 51.732 c 0 -22.724 -17.0439 -45.4498 -39.7696 -45.4498 Z m 0 0" p-id="4095" /></svg>
+	</li>
+	<li>
+		<svg xmlns="http://www.w3.org/2000/svg" id="m4" class="icon" viewBox="0 0 1097 1024" width="200" height="200" t="1574597160593" p-id="4865" version="1.1"><path fill="#ffffff" d="M 932.571 36.571 h -768 A 90.697 90.697 0 0 0 73.143 128 v 581.486 a 91.429 91.429 0 0 0 91.428 95.085 H 321.83 V 936.23 a 50.103 50.103 0 0 0 51.2 51.2 a 65.097 65.097 0 0 0 36.57 -14.63 l 168.229 -168.229 h 351.085 a 90.697 90.697 0 0 0 91.429 -91.428 V 128 a 85.577 85.577 0 0 0 -87.772 -91.429 Z M 661.943 577.83 H 266.97 a 47.543 47.543 0 0 1 0 -95.086 h 394.972 a 47.543 47.543 0 0 1 0 95.086 Z M 830.17 358.4 h -563.2 a 46.08 46.08 0 0 1 -47.542 -47.543 a 48.274 48.274 0 0 1 47.542 -47.543 h 563.2 a 48.274 48.274 0 0 1 47.543 47.543 A 46.08 46.08 0 0 1 830.17 358.4 Z" p-id="4866" /></svg>
+	${data.dcount}</li>
+						`;
+
+						$('.midden').append(disby2);                                                        //跳转评论
+                        $("#m4").click(function () {
+                            window.location.href="discuss.html";
+                        })
+
+                        $("#m1").click(function () {                                                    //音乐收藏
+                            var dstav = $('#m12').val();
+                            if (dstav == 0) {
+                                $(this).attr("src", "img/shoucangf.svg")
+                                $('#m12').val(1);
+                                $.ajax({
+                                    type: "post",
+                                    url: "/collectadd/" + user_id + "/" + music_id,                        //音乐id
+                                    dataType: "json",
+                                    contentType: "application/json;charset=UTF-8",
+                                    success: function (data) {
+                                    }
+                                })
+                            } else {
+                                $(this).attr("src", "img/shoucang.svg")
+                                $('#m12').val(0);
+                                $.ajax({
+                                    type: "post",
+                                    url: "/collectdel/" + user_id + "/" + music_id,                        //音乐id
+                                    dataType: "json",
+                                    contentType: "application/json;charset=UTF-8",
+                                    success: function (data) {
+                                    }
+                                })
+                            }
+                        })
+					}
+				})
+	}
+		})
+	});
+
+	var play=1;                                                                                 //播放
+	$("#bofang").click(function(){
+		if(play==0){
+			$(this).attr("src","img/zanting.svg")
+			$("audio").get(0).play();
+			play=1;
+		}else{
+			$(this).attr("src","img/bofang.svg")
+			play=0;
+			$("audio").get(0).pause();
+		}
+	})
+
+
+
+
+</script>

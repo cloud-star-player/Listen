@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./lib/layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="./css/news.css"  media="all">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <title>消息</title>
+    <script type="text/javascript">
+        document.addEventListener('plusready', function(){
+            //console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="top">
+    <a href="javascript:history.back()"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024" width="200" height="200" t="1574580567312" p-id="5377" version="1.1"><path fill="#ffffff" d="M 766.862 1021.72 c -10.24 0 -20.594 -3.64 -28.444 -10.922 L 228.693 538.396 c -15.701 -14.563 -15.701 -38.229 0 -52.792 L 738.418 13.198 c 15.701 -14.563 41.187 -14.563 56.889 0 c 15.701 14.564 15.701 38.23 0 52.793 L 314.027 512 l 481.28 446.009 c 15.701 14.563 15.701 38.23 0 52.793 c -7.851 7.282 -18.205 10.922 -28.445 10.922 Z" p-id="5378" /></svg></a>
+    <h2>评论</h2>
+    <a href="#"><span> </span></a>
+</div>
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief"  class="layui-main">
+    <ul class="layui-tab-title">
+        <li class="layui-this" id="l1">私信<span class="layui-badge" id="l11"></span></li>
+        <li id="l2">评论<span class="layui-badge" id="l22"></span></li>
+        <li id="l3">@我<span class="layui-badge" id="l33"></span></li>
+        <li id="l4">通知<span class="layui-badge" id="l44"></span></li>
+    </ul>
+    <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+            <a class="xuanze" id="xuanze">
+                <img src="img/lead.png">
+                <div class="l1">
+                    <div class="l2">
+                        <h5>有歌手发布新歌</h5>
+                        <h8>看看是谁的歌吧</h8>
+                    </div>
+                    <span class="layui-badge" id="xuanzes">
+
+				  	</span>
+                </div>
+            </a>
+        </div>
+        <div class="layui-tab-item">
+            <a class="xuanze" id="pinglun">
+            <img src="img/lead.png">
+            <div class="l1">
+                <div class="l2">
+                    <h5>好像有人给了你评论</h5>
+                    <h8>看看是谁的评论吧</h8>
+                </div>
+                <span class="layui-badge" id="pingluns">
+
+				  	</span>
+            </div>
+            </a>
+        </div>
+        <div class="layui-tab-item">内容3</div>
+        <div class="layui-tab-item">
+            <div class="xuanze">
+                <img src="img/lead.png">
+                <div class="l1">
+                    <div class="l2">
+                        <h5>十级了</h5>
+                        <h8>123</h8>
+                    </div>
+                    <span class="layui-badge">
+				  		    3
+					</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./lib/layui/layui.all.js" charset="utf-8"></script>
+<script>
+    var user_id=localStorage.getItem("user_id");
+    var ping="";                        //1.私信   2.评论
+    $.ajax({
+        type:"post",
+        url:"/selectNewc/"+user_id,
+        dataType : "json",
+        contentType : "application/json;charset=UTF-8",
+        success:function(data) {
+            var count=data;
+            $('#l11').append(count);
+            $('#xuanzes').append(count);
+        }
+    });
+    $.ajax({
+        type:"post",
+        url:"/replybyidcount/"+user_id,
+        dataType : "json",
+        contentType : "application/json;charset=UTF-8",
+        success:function(data) {
+            var count=data;
+            $('#l22').append(count);
+            $('#pingluns').append(count);
+        }
+    });
+    $("#xuanze").click(function () {
+        ping=1;
+        localStorage.setItem("ping",ping);
+        $.ajax({
+            type:"post",
+            url:"/newsupdate/"+user_id,
+            dataType : "json",
+            contentType : "application/json;charset=UTF-8",
+            success:function(data) {
+            }
+        });
+        window.location.href="newsall.html";
+    })
+    $("#pinglun").click(function () {
+        ping=2;
+        localStorage.setItem("ping",ping);
+        $.ajax({
+            type:"post",
+            url:"/replyupdate/"+user_id,
+            dataType : "json",
+            contentType : "application/json;charset=UTF-8",
+            success:function(data) {
+            }
+        });
+        window.location.href="newsall.html";
+    })
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        //监听导航点击
+        element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+</script>
+</html>
